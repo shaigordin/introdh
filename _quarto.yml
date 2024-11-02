@@ -10,6 +10,8 @@ website:
         text: עמוד הבית
       - href: about.qmd
         text: תכנית הקורס
+      - href: assignments.qmd
+        text: מטלות
 
 format:
   html:
