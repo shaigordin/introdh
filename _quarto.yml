@@ -4,6 +4,8 @@ project:
 
 website:
   title: "מבוא למדעי הרוח הדיגיטליים / שי גורדין"
+  open-graph: true
+  reader-mode: true
   navbar:
     right:
       - href: index.qmd
@@ -12,6 +14,18 @@ website:
         text: תכנית הקורס
       - href: assignments.qmd
         text: מטלות
+  page-footer:
+    background: light
+    left: "© Shai Gordin, 2024"
+    right: 
+      - icon: github
+        href: https://github.com/shaigordin
+        aria-label: Shai Gordin GitHub
+      - icon: twitter 
+        href: https://twitter.com/shgordin
+        aria-label: Shai Gordin Twitter
+      - icon: envelope
+        href: mailto:shygordin@gmail.com
 
 format:
   html:
