@@ -7,13 +7,32 @@ website:
   open-graph: true
   reader-mode: true
   navbar:
+    logo: ariel_logo_navbar.png
     right:
-      - href: index.qmd
-        text: עמוד הבית
-      - href: about.qmd
-        text: תכנית הקורס
-      - href: assignments.qmd
-        text: מטלות
+      - text: "עמוד הבית"
+        href: index.qmd
+      - text: "תכנית הקורס"  
+        href: about.qmd
+      - text: "מטלות"
+        menu: 
+          - text: "מרכיבי הציון"
+            href: assignments/index.qmd
+          - text: "ניתוח פרויקט דיגיטלי"
+            href: assignments/proj-analysis.qmd
+          - text: "קריאה רחוקה"
+            href: assignments/distant-reading.qmd
+          - text: "עיבוד תווים אופטי (OCR)"
+            href: assignments/ocr.qmd
+          - text: "העשרת טקסט (markup)"
+            href: assignments/markup.qmd
+          - text: "פוסטר מחקרי"
+            href: assignments/poster.qmd
+      - text: "מקורות, כלים, ופרויקטים"
+        menu:
+          - text: "מקורות ובבליוגרפיה"
+            href: resources/literature.qmd
+          - text: "כלים ופרויקטים"
+            href: resources/tools-projects.qmd
   page-footer:
     background: light
     left: "© Shai Gordin, 2024"
