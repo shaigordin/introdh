@@ -25,7 +25,7 @@ website:
             href: assignments/ocr.qmd
           - text: "העשרת טקסט (markup)"
             href: assignments/markup.qmd
-          - text: "פוסטר מחקרי"
+          - text: "פרויקט גמר"
             href: assignments/poster.qmd
       - text: "מקורות, כלים, ופרויקטים"
         menu:

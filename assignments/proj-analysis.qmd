@@ -1,0 +1,25 @@
+---
+title: "ניתוח פרויקט דיגיטלי ומאגר נתונים"
+---
+
+מטרת התרגיל להבין כיצד עובדים פרויקטים דיגיטליים ומהם נתונים (data), ובעיקר כיצד ניתן להבין את כל הפעולות בשדה המחקר החישובי ברגע שעושים את הקפיצה המנטלית המסתכלת על כל מקור כתוב, מצולם, מוקלט, וכו' כנתונים. יש לקרוא את Drucker 2021 פרק ראשון, ובעיקר לשים לב לעמודים 17-21 בהם מתואר תהליך הניתוח. לאחר מכן יש ללכת לאחד מהאתרים הבאים:
+
+1.  [The Pudding](https://pudding.cool/){target="_blank"}
+
+2.  [Open Humanities Data](https://openhumanitiesdata.metajnl.com/){target="_blank"}
+
+3.  [Open Archaeology Data](https://openarchaeologydata.metajnl.com/){target="_blank"}
+
+4.  [Research Data Journal for the Humanities and Social Sciences (RDJ)](https://brill.com/view/journals/rdj/rdj-overview.xml){target="_blank"}
+
+5.  [Internet Archaeology](https://intarch.ac.uk/){target="_blank"}
+
+6.  [Reviews in Digital Humanities](https://reviewsindh.pubpub.org/){target="_blank"}
+
+7.  [Zenodo](https://zenodo.org/){target="_blank"}
+
+8.  [Figshare](https://figshare.com/){target="_blank"}
+
+9.  אחר?
+
+עליכם לאתר בתוכם באמצעות חיפוש וקריאה של מאמרים ותאורים שונים אחרי פרויקט דיגיטלי ומאגר נתונים המעניין אותכם או שאתם רוצים לקרוא ולהבין עליו יותר. זה יכול להיות מתוך תחום המחקר שלכם או מתוך תחום אחר. כאשר אתם מוצאים את הפרויקט והמאגר שאתם רוצים לנתח, [**יש לענות על השאלות בטופס בקישור כאן**](https://forms.gle/Br2Ji43ptzBkKnzZ9){target="_blank"}.
