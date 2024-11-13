@@ -1,0 +1,59 @@
+---
+title: "כלים ופרויקטים חישוביים"
+---
+
+## כלים בסיסיים שישמשו אותנו לתרגול עקרונות חישוביים  
+
+1.  Plain text (editors): [visual studio code](https://code.visualstudio.com/); [notepad++](https://notepad-plus-plus.org/); [sublime text](https://www.sublimetext.com/)
+
+2.  Command line interface & Git: [git for windows](https://git-scm.com/download/win) (<https://www.atlassian.com/git>; <https://ohmygit.org/press/>) 
+
+3.  Bibliography: [Bibtex](http://www.bibtex.org/Format/); [CSL](https://citationstyles.org/); [Zotero](https://www.zotero.org/), online libraries: [DH](https://www.zotero.org/groups/25016/digital_humanities_education), [computational literary studies](https://www.zotero.org/groups/4462714/cls-infra-wp3), [doing DH](https://www.zotero.org/groups/113737/doing_digital_humanities_-_a_dariah_bibliography), [digital archaeology](https://www.zotero.org/groups/316548/digital_archaeology_practices_and_methods), [digital history](https://www.zotero.org/groups/2725721/a_collection_of_digital_history_projects/library)
+
+4.  OCR: [Tesseract engine tools](https://tesseract-ocr.github.io/tessdoc/User-Projects-%E2%80%93-3rdParty); [OCR.net](https://ocr.net/); [Transkribus](https://readcoop.eu/transkribus/)
+
+5.  Data cleaning: [OpenRefine](https://openrefine.org/)
+
+6.  Text analysis and annotation: [voyant tools](https://voyant-tools.org/) (based on Spyral); [Recogito](https://recogito.pelagios.org/) (LOD); [CATMA](https://catma.de/) (general use); [LEAF-VRE](https://www.leaf-vre.org/) (TEI/XML); [topic modeling tool](https://senderle.github.io/topic-modeling-tool/documentation/2017/01/06/quickstart.html) (based on Mallet); [jsLDA: In-browser topic modeling](https://mimno.infosci.cornell.edu/jsLDA/); [AntConc](https://www.laurenceanthony.net/software/antconc/); [Dicta](https://dicta.org.il/) (NLP)
+
+7.  Data visualization (general): [Tableau](https://www.tableau.com/products/public); [Flourish](https://flourish.studio/); [RAWGraphs](https://www.rawgraphs.io/); [Palladio](http://hdlab.stanford.edu/projects/palladio/) 
+
+    1.  Mapping tools: [QGIS](https://www.qgis.org/en/site/); [Allmaps](https://allmaps.org/); [StoryMap](https://storymap.knightlab.com/); [open history map](https://github.com/openhistorymap) 
+
+    2.  Network analysis: [Network Navigator](https://networknavigator.jrladd.com/); [Gephi](https://gephi.org/); [Gephi Lite](https://gephi.org/gephi-lite/); [Cytoscape](https://cytoscape.org/)
+
+    3.  Advanced applications: [D3](https://d3js.org/) and [P5](https://p5js.org/) java script libraries; [text visualization browser](https://textvis.lnu.se/); [mapshaper](https://mapshaper.org/)
+
+8.  Coding environment for beginners: Rstudio [desktop](https://posit.co/download/rstudio-desktop/) and [cloud](https://posit.co/products/cloud/cloud/) (R and python); [Jupyter](https://jupyter.org/) (python); [Anaconda](https://www.anaconda.com/) (many)
+
+\*כלים דיגיטליים לחקר טקסט מפורטים תחת פרויקט [TAPoR](https://tapor.ca/home); להדרכות והדגמות כיצד להשתמש בכלים שנלמד בקורס ואחרים ראו את הבלוג של [מרים פוזנר](https://miriamposner.com/blog/tutorials-ive-written/) וה[היסטוריון המתכנת](https://programminghistorian.org/en/) והאתר של [פרויקט מינימלי של לימוד מדעי הרוח הדיגיטליים בכלא](https://binipringle.github.io/intro-to-dh/)(!); רשימה מודרכת של פרויקטים וחומרי הדרכה על פי נושאים במדעי הרוח הדיגיטליים נמצאת באתר ה-[MLA](https://digitalpedagogy.hcommons.org/)
+
+## פרויקטים לדוגמא
+
+1.  כלים לייצוג וניתוח גוגל בוקס: <https://books.google.com/ngrams/>; <http://distancemachine.org/entry> 
+
+2.  פרויקט ניתוח המקרא [ETCBC](https://etcbc.github.io/bhsa/) (שבנק): [https://shebanq.ancient-data.org](https://shebanq.ancient-data.org/)
+
+3.  ספרות יהודית עתיקה: [https://github.com/hlapin/ancJewLitCTS](https://github.com/hlapin/ancJewLitCTS/tree/master) 
+
+4.  פרויקט השו״ת (Responsa): <https://www.responsa.co.il/home.en-US.aspx>
+
+5.  גזטיר כימה: <https://geo-kima.org/>
+
+6.  פרויקט גוטנברג: <https://www.gutenberg.org/>
+
+7.  פרויקט חתיטראסט: <https://www.hathitrust.org/>
+
+8.  פרויקט בן-יהודה: <https://github.com/projectbenyehuda/public_domain_dump>
+
+9.  מוזיאון המטרופוליטן: <https://github.com/metmuseum/openaccess>
+
+10. עיתונות בספרייה הלאומית: <https://www.nli.org.il/he/discover/newspapers>
+
+11. כתבי אייזיק ניוטון: <https://www.newtonproject.ox.ac.uk/>
+
+12. כתיב-כתבי יד עבריים דיגיטליים: <https://www.nli.org.il/he/discover/manuscripts/hebrew-manuscripts>
+
+13. ספר-דתא: [https://sfardata.nli.org.il/](https://sfardata.nli.org.il/#/startSearch_He)
+
+14. DH מסביב לעולם: <https://arounddh.org/>
