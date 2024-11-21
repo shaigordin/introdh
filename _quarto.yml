@@ -30,7 +30,7 @@ website:
       - text: "מקורות, כלים, ופרויקטים"
         menu:
           - text: "מקורות ובבליוגרפיה"
-            href: resources/literature.qmd
+            href: resources/index.qmd
           - text: "כלים ופרויקטים"
             href: resources/tools-projects.qmd
   page-footer:
