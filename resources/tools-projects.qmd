@@ -2,7 +2,7 @@
 title: "כלים ופרויקטים חישוביים"
 ---
 
-## כלים בסיסיים שישמשו אותנו לתרגול עקרונות חישוביים  
+## כלים בסיסיים שישמשו אותנו לתרגול עקרונות חישוביים
 
 1.  Plain text (editors): [visual studio code](https://code.visualstudio.com/); [notepad++](https://notepad-plus-plus.org/); [sublime text](https://www.sublimetext.com/)
 
