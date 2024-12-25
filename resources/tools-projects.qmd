@@ -56,4 +56,6 @@ title: "כלים ופרויקטים חישוביים"
 
 13. ספר-דתא: [https://sfardata.nli.org.il/](https://sfardata.nli.org.il/#/startSearch_He)
 
-14. DH מסביב לעולם: <https://arounddh.org/>
+14. (טקסטים רבניים) הספריה של דיקטה: <https://github.com/Dicta-Israel-Center-for-Text-Analysis/Dicta-Library-Download/>
+
+15. DH מסביב לעולם: <https://arounddh.org/>
