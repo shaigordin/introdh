@@ -179,7 +179,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">המחברות</h2>
    
   <ul>
-  <li><a href="#nb1" id="toc-nb1" class="nav-link active" data-scroll-target="#nb1">מחברת 1 — ויקיפדיה ורשתות ידע</a></li>
+  <li><a href="#what-is-colab" id="toc-what-is-colab" class="nav-link active" data-scroll-target="#what-is-colab">מה זה Google Colab?</a>
+  <ul class="collapse">
+  <li><a href="#מה-מיוחד-ב-colab" id="toc-מה-מיוחד-ב-colab" class="nav-link" data-scroll-target="#מה-מיוחד-ב-colab">מה מיוחד ב-Colab</a></li>
+  <li><a href="#how-to-open" id="toc-how-to-open" class="nav-link" data-scroll-target="#how-to-open">איך פותחים מחברת</a></li>
+  <li><a href="#how-to-run" id="toc-how-to-run" class="nav-link" data-scroll-target="#how-to-run">איך מריצים קוד</a></li>
+  <li><a href="#saving" id="toc-saving" class="nav-link" data-scroll-target="#saving">שמירה והגשה</a></li>
+  <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq">שאלות נפוצות</a></li>
+  </ul></li>
+  <li><a href="#nb1" id="toc-nb1" class="nav-link" data-scroll-target="#nb1">מחברת 1 — ויקיפדיה ורשתות ידע</a></li>
   <li><a href="#nb2" id="toc-nb2" class="nav-link" data-scroll-target="#nb2">מחברת 2 — קריאה מרחוק</a></li>
   <li><a href="#nb3" id="toc-nb3" class="nav-link" data-scroll-target="#nb3">מחברת 3 — OCR לטקסטים עבריים</a></li>
   <li><a href="#nb4" id="toc-nb4" class="nav-link" data-scroll-target="#nb4">מחברת 4 — NLP ומידול נושאים</a></li>
@@ -211,10 +219,110 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>מחברות Python אינטראקטיביות המלוות את יחידות הקורס. ניתן לפתוח כל מחברת ישירות ב-Google Colab ללא כל התקנה מקומית — רק צריך חשבון Google.</p>
+<hr>
+<section id="what-is-colab" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-colab">מה זה Google Colab?</h2>
+<p><strong>Google Colab</strong> (קולאב) היא סביבת עבודה חינמית של גוגל להרצת קוד Python, ישירות בדפדפן — ללא התקנה של שום דבר על המחשב שלכם.</p>
+<p>חשבו עליה כ-<strong>מסמך Google Docs, אך במקום טקסט — קוד שרץ באמת</strong>.</p>
+<section id="מה-מיוחד-ב-colab" class="level3">
+<h3 class="anchored" data-anchor-id="מה-מיוחד-ב-colab">מה מיוחד ב-Colab</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>מאפיין</th>
+<th>פרטים</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>חינמי</strong></td>
+<td>כולל GPU/TPU לחישובים כבדים</td>
+</tr>
+<tr class="even">
+<td><strong>ענן</strong></td>
+<td>כל העיבוד מתבצע בשרתי גוגל, לא על המחשב שלכם</td>
+</tr>
+<tr class="odd">
+<td><strong>שיתוף</strong></td>
+<td>שיתוף פעולה בזמן אמת כמו Google Docs</td>
+</tr>
+<tr class="even">
+<td><strong>שמירה</strong></td>
+<td>שמירה אוטומטית ב-Google Drive</td>
+</tr>
+<tr class="odd">
+<td><strong>אין התקנה</strong></td>
+<td>עובד מכל מחשב עם Chrome / Firefox</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="how-to-open" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-open">איך פותחים מחברת</h3>
+<ol type="1">
+<li>לחצו על הכפתור הכחול <strong>“Open in Colab”</strong> ליד כל מחברת בדף זה:</li>
+</ol>
+<div class="force-ltr">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://colab.research.google.com/" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid figure-img"></a></p>
+<figcaption>Open In Colab</figcaption>
+</figure>
+</div>
+</div>
+<ol start="2" type="1">
+<li>התחברו עם חשבון Google שלכם (אם נדרש)</li>
+<li><strong>חשוב מאוד:</strong> בחרו <code>File → Save a copy in Drive</code> כדי לשמור עותק אישי — אחרת השינויים <strong>לא יישמרו</strong>!</li>
+</ol>
+</section>
+<section id="how-to-run" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-run">איך מריצים קוד</h3>
+<p>המחברת מחולקת ל<strong>תאים (Cells)</strong> — כל תא מכיל קוד או הסבר טקסטואלי.</p>
+<p>להרצת תא:</p>
+<ul>
+<li>לחצו על לחצן <strong>▶</strong> בצד שמאל של התא, <strong>או</strong></li>
+<li>לחצו <strong>Shift + Enter</strong> — מריץ תא ועובר לבא אחריו</li>
+<li>לחצו <strong>Ctrl + Enter</strong> — מריץ תא ונשאר בו</li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+הריצו לפי הסדר!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>חשוב להריץ את התאים <strong>מלמעלה למטה</strong> לפי הסדר. דילוג על תא עלול לגרום לשגיאות בתאים הבאים.</p>
+</div>
+</div>
+</section>
+<section id="saving" class="level3">
+<h3 class="anchored" data-anchor-id="saving">שמירה והגשה</h3>
+<p>בסיום השיעור:</p>
+<ol type="1">
+<li><code>File → Save a copy in Drive</code> — ודאו שהמחברת שמורה</li>
+<li><code>File → Download → Download .ipynb</code> — הורידו את הקובץ לשליחה ב-Moodle</li>
+</ol>
+</section>
+<section id="faq" class="level3">
+<h3 class="anchored" data-anchor-id="faq">שאלות נפוצות</h3>
+<p><strong>שאלה: הכל נעלם ו-Colab מבקש ממני להריץ מחדש.</strong><br>
+תשובה: Colab מתנתק לאחר ~90 דקות של אי-פעילות. יש להריץ מחדש מהתחלה — זה תקין.</p>
+<p><strong>שאלה: קיבלתי הודעת שגיאה אדומה — מה עושים?</strong><br>
+תשובה: קראו את ההודעה (בדרך כלל מסבירה מה קרה), ואז שאלו את Gemini ב-<a href="https://aistudio.google.com/">Google AI Studio</a> — העתיקו את השגיאה ושאלו ״מה זאת אומרת ואיך לתקן?״</p>
+<p><strong>שאלה: למה אין כפתור ▶ בחלק מהתאים?</strong><br>
+תשובה: תאים אפורים/לבנים הם תאי <strong>טקסט/הסבר</strong> — אי אפשר להריץ אותם, זה מכוון.</p>
+<p><strong>שאלה: איפה מקבלים מפתח Gemini API (חינמי)?</strong><br>
+תשובה: נכנסים ל-<a href="https://aistudio.google.com/apikey">aistudio.google.com/apikey</a>, לוחצים “Create API Key”, ומעתיקים את המחרוזת שמתקבלת.</p>
+<hr>
 <blockquote class="blockquote">
-<p><strong>הנחיה:</strong> לחצו על כפתור ה-Colab הכחול ▶ בכל מחברת כדי להריץ אותה בענן. הקד בנוי כך שרץ לפי שלבים — תרגלו, שנו, ובדקו.</p>
+<p><strong>הנחיה:</strong> לחצו על כפתור ה-Colab הכחול ▶ בכל מחברת כדי להריץ אותה בענן. הקוד בנוי כך שרץ לפי שלבים — תרגלו, שנו, ובדקו.</p>
 </blockquote>
 <hr>
+</section>
+</section>
 <section id="nb1" class="level2">
 <h2 class="anchored" data-anchor-id="nb1">מחברת 1 — ויקיפדיה ורשתות ידע</h2>
 <p>📚 <strong>נושא:</strong> ויקיפדיה כמקור נתונים ורשתות ידע דיגיטלי</p>
@@ -278,8 +386,8 @@ ul.task-list li input[type="checkbox"] {
 <section id="nb5" class="level2">
 <h2 class="anchored" data-anchor-id="nb5">מחברת 5 — בינה מלאכותית למדעי הרוח</h2>
 <p>🤖 <strong>נושא:</strong> AI ומודלי שפה גדולים (LLMs) במחקר הומניסטי</p>
-<p><strong>מה נלמד:</strong> עקרונות מודלי שפה גדולים, הנדסת פרומפטים, שימוש ב-API של OpenAI, ואתיקה של AI.</p>
-<p><strong>כלים:</strong> <code>openai</code>, <code>transformers</code>, <code>langchain</code></p>
+<p><strong>מה נלמד:</strong> עקרונות מודלי שפה גדולים, הנדסת פרומפטים, שימוש ב-Gemini API (חינמי!) ואתיקה של AI.</p>
+<p><strong>כלים:</strong> <code>google-generativeai</code> (Gemini — חינמי), <code>openai</code>, <code>anthropic</code></p>
 <div class="force-ltr">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
