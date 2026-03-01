@@ -1,18 +1,26 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "*.qmd"
+    - "assignments/*.qmd"
+    - "resources/*.qmd"
+    - "notebooks/index.qmd"
 
 website:
-  title: "מבוא למדעי הרוח הדיגיטליים / שי גורדין"
+  title: "מבוא למדעי הרוח הדיגיטליים תשפ״ו / שי גורדין"
   open-graph: true
   reader-mode: true
   navbar:
     logo: ariel_logo_navbar.png
+    background: primary
     right:
       - text: "עמוד הבית"
         href: index.qmd
       - text: "תכנית הקורס"  
         href: about.qmd
+      - text: "מחברות Python"
+        href: notebooks/index.qmd
       - text: "מטלות"
         menu: 
           - text: "מרכיבי הציון"
@@ -35,7 +43,7 @@ website:
             href: resources/tools-projects.qmd
   page-footer:
     background: light
-    left: "© Shai Gordin, 2024"
+    left: "© Shai Gordin, 2026"
     right: 
       - icon: github
         href: https://github.com/shaigordin
@@ -50,16 +58,17 @@ format:
   html:
     include-in-header:
       - text: |
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-          <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700&family=Alef:wght@400;700&display=swap" rel="stylesheet">
     theme: cosmo
     css: styles.css
     toc: true
     toc-title: "בעמוד זה"
-    html-metadata:
-      lang: he
-      dir: rtl
-      
+    lang: he
+    dir: rtl
+
 
 

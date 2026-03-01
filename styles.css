@@ -1,128 +1,307 @@
-/* css styles */
+/* ====================================================
+   introdh — Course Website Styles (2026 Edition)
+   RTL-first design with LTR overrides for mixed content
+   ==================================================== */
+
+/* --- Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Heebo:wght@300;400;600;700&display=swap');
+
+/* ---- CSS Custom Properties ---- */
+:root {
+  --font-rtl: 'Heebo', 'Alef', Arial, sans-serif;
+  --font-ltr: 'Inter', 'Segoe UI', Arial, sans-serif;
+  --color-primary: #1a5276;
+  --color-accent: #2e86c1;
+  --color-accent-light: #aed6f1;
+  --color-bg: #ffffff;
+  --color-surface: #f8f9fa;
+  --color-border: #dee2e6;
+  --color-text: #212529;
+  --color-text-muted: #6c757d;
+  --color-link: #1a5276;
+  --color-link-hover: #2e86c1;
+  --color-heading: #1a2942;
+  --radius-card: 0.7rem;
+  --shadow-card: 0 2px 12px rgba(0,0,0,0.07);
+  --transition: 0.2s ease;
+}
+
+/* ---- Base & Direction ---- */
+html {
+  direction: rtl;
+}
 
 body {
   direction: rtl;
   text-align: right;
-  font-family: 'Alef', sans-serif;
-  font-size: 18px;
-  /*font-family: 'Press Start 2P', cursive;
-  background-image: url('/images/home_page.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: rgba(0, 0, 0, 0.7);
-  background-color: black;
-  color: #00FF00; */
+  font-family: var(--font-rtl);
+  font-size: clamp(15px, 2vw, 18px);
+  line-height: 1.75;
+  color: var(--color-text);
+  background-color: var(--color-bg);
 }
 
-Headings 
+/* ---- LTR islands: code, English spans, URLs ---- */
+code, pre, kbd, samp,
+.ltr, [lang="en"], [dir="ltr"] {
+  direction: ltr;
+  text-align: left;
+  font-family: 'Fira Mono', 'Cascadia Code', 'Consolas', monospace;
+  unicode-bidi: embed;
+}
+
+pre {
+  padding: 1rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.4rem;
+  overflow-x: auto;
+  font-size: 0.88em;
+}
+
+/* Inline code inside RTL text */
+p code, li code, td code, th code {
+  direction: ltr;
+  display: inline-block;
+  unicode-bidi: bidi-override;
+  padding: 0.1em 0.35em;
+  background: #eef3f8;
+  border-radius: 3px;
+  font-size: 0.88em;
+  vertical-align: middle;
+}
+
+/* ---- Typography ---- */
 h1, h2, h3, h4, h5, h6 {
-  color: black;
+  font-family: var(--font-rtl);
+  font-weight: 700;
+  color: var(--color-heading);
+  line-height: 1.3;
+  margin-top: 1.6em;
+  margin-bottom: 0.5em;
 }
+h1 { font-size: clamp(1.7rem, 4vw, 2.2rem); }
+h2 { font-size: clamp(1.35rem, 3vw, 1.8rem); border-bottom: 2px solid var(--color-accent-light); padding-bottom: 0.25em; }
+h3 { font-size: clamp(1.1rem, 2.5vw, 1.45rem); }
+h4 { font-size: 1.15rem; }
 
-/* Headings and other elements */
-h1 {
-  font-size: 2.2em; /* Larger for main headings */
-}
+p { margin-bottom: 1em; }
 
-h2 {
-  font-size: 1.8em; /* Medium for sub-headings */
-}
-
-h3 {
-  font-size: 1.5em; /* Slightly smaller */
-}
-
-p {
-  font-size: 1.1em; /* Slightly larger for regular paragraph text */
-}
-
-footer {
-  font-size: 0.8em; /* Smaller font size for footer */
-}
-
-@media (max-width: 768px) {
-  body {
-    font-size: 14px;  /* Smaller font size for mobile screens */
-  }
-
-  h1 {
-    font-size: 1.8em;  /* Adjust heading size on smaller screens */
-  }
-
-  h2 {
-    font-size: 1.5em;
-  }
-}
-
-/*.homepage body {
-  background-image: url('/images/home_page.png') !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  background-color: rgba(0, 0, 0, 0.7) !important; /* Semi-transparent background color */
-}
-
-/* Links 
+/* ---- Links ---- */
 a {
-  color: #FF00FF;
+  color: var(--color-link);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color var(--transition), border-color var(--transition);
+}
+a:hover {
+  color: var(--color-link-hover);
+  border-bottom-color: var(--color-link-hover);
 }
 
-/* Fallback for browsers that support target-new */
-/*a:not([href^="#"]) {
-  target-new: tab;      
+/* ---- Navbar ---- */
+.navbar {
+  direction: rtl;
+}
+.navbar-brand, .navbar-nav .nav-link {
+  font-family: var(--font-rtl);
+  font-weight: 600;
+}
+/* Dropdown menus open correctly in RTL */
+.dropdown-menu {
+  text-align: right;
+  direction: rtl;
+  right: 0;
+  left: auto;
 }
 
-/* Optional: Add an external link icon or indicator */
-/*a:not([href^="#"])::after {
-  content: ' ↗'; 
+/* ---- TOC ---- */
+#quarto-margin-sidebar,
+.margin-sidebar {
+  direction: rtl;
+}
+.sidebar-title {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+.sidebar-item-text {
+  font-size: 0.92em;
 }
 
-/* Sidebar 
-.sidebar {
-  background-color: #111;
-  border: 4px solid #FF00FF;
-  padding: 10px;
-  color: #00FF00;
-  box-shadow: 0 0 10px #00FFFF;
+/* ---- Tables ---- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95em;
+  margin: 1.5rem 0;
+  direction: rtl;
+  text-align: right;
+}
+thead tr {
+  background-color: var(--color-primary);
+  color: white;
+}
+th, td {
+  padding: 0.65rem 0.9rem;
+  border: 1px solid var(--color-border);
+  vertical-align: top;
+}
+tbody tr:nth-child(even) {
+  background-color: var(--color-surface);
+}
+tbody tr:hover {
+  background-color: #e8f4fc;
+  transition: background var(--transition);
 }
 
-/* Content
-.content {
-  border: 4px solid #FF00FF;
-  padding: 10px;
-  box-shadow: 0 0 10px #00FFFF;
+/* ---- Schedule Table specifics ---- */
+.schedule-table {
+  font-size: 0.9em;
+}
+.schedule-table .unit-header td {
+  background-color: #d6eaf8;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+.schedule-table .date-cell {
+  white-space: nowrap;
+  font-weight: 600;
+  min-width: 6rem;
+  direction: ltr;
+  text-align: center;
+}
+.notebook-badge {
+  display: inline-block;
+  padding: 0.2em 0.55em;
+  background: var(--color-accent);
+  color: white;
+  border-radius: 0.3rem;
+  font-size: 0.8em;
+  direction: rtl;
 }
 
-/* Buttons
-button, .btn {
-  background-color: #FF4500;
-  color: #FFFFFF;
-  border: 2px solid #00FFFF;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  font-family: 'Press Start 2P', cursive;
+/* ---- Cards ---- */
+.card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  background: var(--color-bg);
+  box-shadow: var(--shadow-card);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.card:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+  transform: translateY(-2px);
 }
 
-button:hover, .btn:hover {
-  background-color: #00FF00;
-  border-color: #FF00FF;
+/* ---- Notebook listing cards ---- */
+.notebook-card {
+  border-right: 4px solid var(--color-accent);
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.75rem;
+  background: var(--color-surface);
+  border-radius: 0 var(--radius-card) var(--radius-card) 0;
+  transition: background var(--transition);
+}
+.notebook-card:hover { background: #e8f4fc; }
+.notebook-number {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: white;
+  font-weight: 700;
+  font-size: 0.9em;
+  margin-left: 0.6rem;
 }
 
-/* Blinking Text
-.blinking-text {
-  color: #FFFF00;
-  animation: blink 1s step-end infinite;
+/* ---- Images ---- */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.3rem;
 }
 
-@keyframes blink {
-  50% {
-    opacity: 0;
+/* ---- Footer ---- */
+footer, .nav-footer {
+  font-size: 0.85em;
+  direction: rtl;
+  text-align: right;
+  color: var(--color-text-muted);
+}
+.nav-footer .nav-footer-left { text-align: right; }
+.nav-footer .nav-footer-right { text-align: left; }
+
+/* ============================================================
+   RESPONSIVE BREAKPOINTS
+   ============================================================ */
+
+/* --- Tablet (≤ 991px) --- */
+@media (max-width: 991px) {
+  body { font-size: 16px; }
+  h1 { font-size: 1.7rem; }
+  h2 { font-size: 1.4rem; }
+  h3 { font-size: 1.2rem; }
+  .navbar-collapse .navbar-nav { flex-direction: column; }
+  #quarto-margin-sidebar { display: none; }
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
-/* Images
-img {
-  image-rendering: pixelated;
-  border: 2px solid #FF00FF;
+/* --- Mobile (≤ 767px) --- */
+@media (max-width: 767px) {
+  body { font-size: 15px; }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.25rem; }
+  h3 { font-size: 1.1rem; }
+  .quarto-content, #quarto-content { padding: 0 0.5rem; }
+  th, td { padding: 0.45rem 0.55rem; font-size: 0.85em; }
+  .schedule-table .date-cell { min-width: 4.5rem; font-size: 0.8em; }
+  .card, .notebook-card { margin-bottom: 0.6rem; }
+  .nav-footer { flex-direction: column; text-align: center; }
+  .nav-footer .nav-footer-left,
+  .nav-footer .nav-footer-right { text-align: center; }
+}
+
+/* --- Large screens (≥ 1400px) --- */
+@media (min-width: 1400px) {
+  body { font-size: 18px; }
+}
+
+/* ============================================================
+   MIXED RTL/LTR UTILITIES
+   ============================================================ */
+
+/* Force LTR for any element that should read left-to-right */
+.force-ltr {
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: bidi-override;
+}
+
+/* Inline LTR within RTL paragraphs */
+.en, .latin {
+  direction: ltr;
+  display: inline-block;
+  unicode-bidi: embed;
+}
+
+/* Mixed content paragraph */
+.mixed-content {
+  unicode-bidi: plaintext;
+}
+
+/* ---- Print styles ---- */
+@media print {
+  body { font-size: 12pt; }
+  .navbar, .nav-footer, #quarto-margin-sidebar { display: none; }
+  a { color: inherit; border-bottom: none; }
+  pre { border: 1px solid #ccc; }
 }

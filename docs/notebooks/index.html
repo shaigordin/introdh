@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>חובות ומטלות הקורס – מבוא למדעי הרוח הדיגיטליים תשפ״ו / שי גורדין</title>
+<title>מחברות Python לתרגול – מבוא למדעי הרוח הדיגיטליים תשפ״ו / שי גורדין</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -75,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="חובות ומטלות הקורס – מבוא למדעי הרוח הדיגיטליים תשפ״ו / שי גורדין">
+<meta property="og:title" content="מחברות Python לתרגול – מבוא למדעי הרוח הדיגיטליים תשפ״ו / שי גורדין">
 <meta property="og:description" content="">
 <meta property="og:site_name" content="מבוא למדעי הרוח הדיגיטליים תשפ״ו / שי גורדין">
 </head>
@@ -109,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">תכנית הקורס</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../notebooks/index.html"> 
+    <a class="nav-link active" href="../notebooks/index.html" aria-current="page"> 
 <span class="menu-text">מחברות Python</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -176,13 +176,15 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">בעמוד זה</h2>
+    <h2 id="toc-title">המחברות</h2>
    
   <ul>
-  <li><a href="#קריאת-מאמרים-והשתתפות-בשיעור-10" id="toc-קריאת-מאמרים-והשתתפות-בשיעור-10" class="nav-link active" data-scroll-target="#קריאת-מאמרים-והשתתפות-בשיעור-10">קריאת מאמרים והשתתפות בשיעור (10%)</a></li>
-  <li><a href="#תרגילים-שבועיים-20" id="toc-תרגילים-שבועיים-20" class="nav-link" data-scroll-target="#תרגילים-שבועיים-20">תרגילים שבועיים (20%)</a></li>
-  <li><a href="#הצגה-בכיתה-30" id="toc-הצגה-בכיתה-30" class="nav-link" data-scroll-target="#הצגה-בכיתה-30">הצגה בכיתה (30%)</a></li>
-  <li><a href="#פוסטר-מחקרי-40" id="toc-פוסטר-מחקרי-40" class="nav-link" data-scroll-target="#פוסטר-מחקרי-40">פוסטר מחקרי (40%)</a></li>
+  <li><a href="#nb1" id="toc-nb1" class="nav-link active" data-scroll-target="#nb1">מחברת 1 — ויקיפדיה ורשתות ידע</a></li>
+  <li><a href="#nb2" id="toc-nb2" class="nav-link" data-scroll-target="#nb2">מחברת 2 — קריאה מרחוק</a></li>
+  <li><a href="#nb3" id="toc-nb3" class="nav-link" data-scroll-target="#nb3">מחברת 3 — OCR לטקסטים עבריים</a></li>
+  <li><a href="#nb4" id="toc-nb4" class="nav-link" data-scroll-target="#nb4">מחברת 4 — NLP ומידול נושאים</a></li>
+  <li><a href="#nb5" id="toc-nb5" class="nav-link" data-scroll-target="#nb5">מחברת 5 — בינה מלאכותית למדעי הרוח</a></li>
+  <li><a href="#nb6" id="toc-nb6" class="nav-link" data-scroll-target="#nb6">מחברת 6 — ויזואליזציה ומפות</a></li>
   </ul>
 </nav>
     </div>
@@ -191,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">חובות ומטלות הקורס</h1>
+<h1 class="title">מחברות Python לתרגול</h1>
 </div>
 
 
@@ -208,28 +210,99 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>מרכיבי הציון הסופי: קריאת מאמרים והשתתפות בשיעור (10%), תרגילים שבועיים (20%), הצגה בכיתה (30%), ופוסטר מחקרי (40%). הקורס מורכב משלוש יחידות נושאיות הקשורות זו בזו ובונות לתמונה רחבה של התחום, כך שבכל שיעור כמעט יש קריאה כלשהי, פעילות בשיעור וכן ארבע מטלות להגשה. הפרויקט גמר של הקורס הוא פוסטר מחקרי שהציון עליו מבוסס על שתי הצגות והפוסטר עצמו: הצגת בזק של הנושא בסוף יחידה 1 של הקורס (28/11), והצגה סופית של המחקר והפוסטר בסוף הקורס שלאחריו יהיה שבוע בלבד כדי להגיש את הפוסטר מתוקן בגרסתו לקבלת הערכה סופית. ראה מבט על <a href="../about.html" target="_blank">בתכנית הקורס</a>, וגם בדפי מטלות באתר זה.</p>
-<section id="קריאת-מאמרים-והשתתפות-בשיעור-10" class="level2">
-<h2 class="anchored" data-anchor-id="קריאת-מאמרים-והשתתפות-בשיעור-10">קריאת מאמרים והשתתפות בשיעור (10%)</h2>
-<p>כמעט כל שיעור מכיל קריאה כלשהי שקשורה לפעילות שלנו באותו השבוע, ועל כן <strong>יש לקרוא את המאמר לצרכי דיון בכיתה</strong>. יש להגיע לכיתה מוכנים לדיון ולהשתתפות פעילה בו. לעתים אני מציין שהמאמר הוא לקריאה נוספת או להרחבה, ואז כמובן שקריאת המאמר היא רשות. כמו כן תרגולים בשיעור יערכו באמצעות תוכנות שלא מצריכות התקנה היישר מהדפדפן ו<strong>השתתפות בתרגילים הללו</strong> חשובה ללימוד מוצלח של הנושא.</p>
+<p>מחברות Python אינטראקטיביות המלוות את יחידות הקורס. ניתן לפתוח כל מחברת ישירות ב-Google Colab ללא כל התקנה מקומית — רק צריך חשבון Google.</p>
+<blockquote class="blockquote">
+<p><strong>הנחיה:</strong> לחצו על כפתור ה-Colab הכחול ▶ בכל מחברת כדי להריץ אותה בענן. הקד בנוי כך שרץ לפי שלבים — תרגלו, שנו, ובדקו.</p>
+</blockquote>
+<hr>
+<section id="nb1" class="level2">
+<h2 class="anchored" data-anchor-id="nb1">מחברת 1 — ויקיפדיה ורשתות ידע</h2>
+<p>📚 <strong>נושא:</strong> ויקיפדיה כמקור נתונים ורשתות ידע דיגיטלי</p>
+<p><strong>מה נלמד:</strong> כיצד ויקיפדיה משמשת מקור נתונים מובנה, מהו גרף הקישורים בין ערכים, וכיצד לאסוף נתונים אוטומטית.</p>
+<p><strong>כלים:</strong> <code>wikipedia-api</code>, <code>networkx</code>, <code>pyvis</code></p>
+<div class="force-ltr">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://colab.research.google.com/github/shaigordin/introdh/blob/2026/notebooks/2026wiki/01_%D7%95%D7%99%D7%A7%D7%99%D7%A4%D7%93%D7%99%D7%94_%D7%95%D7%A8%D7%A9%D7%AA%D7%95%D7%AA_%D7%99%D7%93%D7%A2.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid figure-img"></a></p>
+<figcaption>Open In Colab</figcaption>
+</figure>
+</div>
+</div>
+<hr>
 </section>
-<section id="תרגילים-שבועיים-20" class="level2">
-<h2 class="anchored" data-anchor-id="תרגילים-שבועיים-20">תרגילים שבועיים (20%)</h2>
-<p>ישנם ארבעה תרגילים המלמדים פרקטיקות חישוביות חיוניות למחקר בסיסי שחייבים להגיש בתאריכים הנקובים <a href="../about.html" target="_blank">בתכנית הקורס</a> והם כוללים:</p>
-<ol type="1">
-<li><p>ניתוח פרויקט דיגיטלי ומאגר נתונים לבחירתכם, לפחות אחד מכל סוג (פרויקט אחד ומאגר נתונים אחד). את הפרויקטים ומאגרי הנתונים אפשר לבחור מתוך שדה המחקר המוכר לכם, או מתוך רשימת אתרים נתונה מראש. לפרטים נוספים וכיצד להגיש ראו <a href="../assignments/proj-analysis.html" target="_blank">עמוד המטלה</a>. ההגשה היא עד <strong>תאריך 14/11</strong> וייערך עליה דיון כיתתי מעמיק.</p></li>
-<li><p>קריאת יצירה ספרותית או טקסט אחר לבחירתכם באמצעות תוכנת <a href="https://voyant-tools.org/" target="_blank">Voyant tools</a>. הטקסט יכול להיות קשור לפרויקט גמר של הקורס, למחקר שלכם, או לכל דבר אחר שתרצו. עדיפות לטקסטים יחסית ארוכים, אבל יכול להיות גם הרבה טקסטים קצרים למשל. לפרטים נוספים וכיצד להגיש ראו <a href="../assignments/distant-reading.html" target="_blank">עמוד המטלה</a>. ההגשה היא עד <strong>תאריך 12/12</strong>.</p></li>
-<li><p>המרת טקסט מתמונה של מסמך לטקסט קריא למכונה (machine readable) באמצעות עיבוד תווים אופטי או OCR של תכנת <a href="https://tesseract-ocr.github.io/tessdoc/User-Projects-%E2%80%93-3rdParty.html" target="_blank">Tesseract OCR</a>. יש להכין לפחות שני עמודים ולבדוק אותם מול המקור, אנא תעדו את הטעויות וספרו אותן בטבלה. לפרטים נוספים וכיצד להגיש ראו <a href="../assignments/ocr.html" target="_blank">עמוד המטלה</a>. ההגשה היא עד <strong>תאריך 19/12</strong>.</p></li>
-<li><p>תיוג והעשרה של נתונים בטקסטים שעברו דיגיטציה בעזרת תוכנת <a href="https://recogito.pelagios.org/" target="_blank">Recogito</a>. רצוי לבחור חומרי מקור הקשורים לפרויקט הגמר שלכם במידת האפשר. לפרטים נוספים וכיצד להגיש ראו <a href="../assignments/markup.html" target="_blank">עמוד המטלה</a>. ההגשה היא עד <strong>תאריך 4/1</strong>.</p></li>
-</ol>
+<section id="nb2" class="level2">
+<h2 class="anchored" data-anchor-id="nb2">מחברת 2 — קריאה מרחוק</h2>
+<p>📖 <strong>נושא:</strong> Distant Reading — ניתוח טקסטואלי חישובי</p>
+<p><strong>מה נלמד:</strong> ניתוח תדירות מילים, יצירת ענן מילים, n-grams, וסנטימנט אנליזה על קורפוס עברי.</p>
+<p><strong>כלים:</strong> <code>pandas</code>, <code>matplotlib</code>, <code>wordcloud</code>, <code>nltk</code></p>
+<div class="force-ltr">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://colab.research.google.com/github/shaigordin/introdh/blob/2026/notebooks/2026wiki/02_%D7%A7%D7%A8%D7%99%D7%90%D7%94_%D7%9E%D7%A8%D7%97%D7%95%D7%A7.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid figure-img"></a></p>
+<figcaption>Open In Colab</figcaption>
+</figure>
+</div>
+</div>
+<hr>
 </section>
-<section id="הצגה-בכיתה-30" class="level2">
-<h2 class="anchored" data-anchor-id="הצגה-בכיתה-30">הצגה בכיתה (30%)</h2>
-<p>כבר בתחילת הקורס אתם נדרשים לבחור נושא לפוסטר המחקרי שהוא פרויקט הגמר מכיוון שיידרש זמן למחקר והכנה של הפרויקט. כדי לעשות זאת בצורה יעילה אתם נדרשים להציג את הנושא כבר בסוף יחידה 1 (28/11) בהצגת בזק (lightning talk) שתארך 7 דק׳ עם דיון באורך של 7 דק׳. הפידבק להרצאה יהיה מהתלמידים האחרים בשיעור בנוסף למרצה. להסבר נוסף על אופי ההרצאה ראו <a href="../assignments/poster.html" target="_blank">עמוד פרויקט הגמר</a>.</p>
+<section id="nb3" class="level2">
+<h2 class="anchored" data-anchor-id="nb3">מחברת 3 — OCR לטקסטים עבריים</h2>
+<p>📷 <strong>נושא:</strong> זיהוי תווים אופטי (OCR) לעברית</p>
+<p><strong>מה נלמד:</strong> כיצד ממירים תמונה של טקסט לטקסט דיגיטלי, שימוש ב-Tesseract לעברית, והערכת איכות הפלט.</p>
+<p><strong>כלים:</strong> <code>pytesseract</code>, <code>PIL</code> (Pillow), <code>pdf2image</code></p>
+<div class="force-ltr">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://colab.research.google.com/github/shaigordin/introdh/blob/2026/notebooks/2026wiki/03_OCR_%D7%A2%D7%91%D7%A8%D7%99%D7%AA.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid figure-img"></a></p>
+<figcaption>Open In Colab</figcaption>
+</figure>
+</div>
+</div>
+<hr>
 </section>
-<section id="פוסטר-מחקרי-40" class="level2">
-<h2 class="anchored" data-anchor-id="פוסטר-מחקרי-40">פוסטר מחקרי (40%)</h2>
-<p>הצגת הפרויקט בכיתה הינה חלק משמעותי מפרויקט הגמר של הקורס ומהווה חלק מהציון של פרויקט הגמר (תאריכי הצגה: 16/01/25 ו-23/01/25). ההצגה תהיה בפורמט של <u><strong>כרזה מדעית (פוסטר)</strong></u>, להוראות מדויקות והסבר על אופן ניקוד העבודה ראו <a href="../assignments/poster.html" target="_blank">עמוד פרויקט הגמר</a>. לאחר ההצגה בכיתה ופידבק שתקבלו ממני ומחבריכם לספסל הלימודים תוכלו לעבוד ולשפר את תוצאות הפרויקט שלכם ולהגיש <u>כרזה מדעית מעודכנת של המחקר, תוצאותיו, ניתוח ומסקנות</u> כחודש לאחר סיום הסמסטר: 28/02/25. את הכרזה הסופית וקובץ נתונים עם דוגמאות לחומרים הדיגיטליים של המחקר שלכם <strong>יש להעלות <a href="https://forms.gle/jnYxWsqG3ha5q6JV9" target="_blank">לטופס בקישור כאן</a></strong>.</p>
+<section id="nb4" class="level2">
+<h2 class="anchored" data-anchor-id="nb4">מחברת 4 — NLP ומידול נושאים</h2>
+<p>🔬 <strong>נושא:</strong> עיבוד שפה טבעית (NLP) ו-Topic Modeling</p>
+<p><strong>מה נלמד:</strong> טוקניזציה, נרמול טקסט, זיהוי ישויות בעברית, ומידול נושאים עם LDA.</p>
+<p><strong>כלים:</strong> <code>spacy</code> (Hebrew), <code>gensim</code>, <code>pyLDAvis</code></p>
+<div class="force-ltr">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://colab.research.google.com/github/shaigordin/introdh/blob/2026/notebooks/2026wiki/04_NLP_%D7%95%D7%9E%D7%99%D7%93%D7%95%D7%9C_%D7%A0%D7%95%D7%A9%D7%90%D7%99%D7%9D.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid figure-img"></a></p>
+<figcaption>Open In Colab</figcaption>
+</figure>
+</div>
+</div>
+<hr>
+</section>
+<section id="nb5" class="level2">
+<h2 class="anchored" data-anchor-id="nb5">מחברת 5 — בינה מלאכותית למדעי הרוח</h2>
+<p>🤖 <strong>נושא:</strong> AI ומודלי שפה גדולים (LLMs) במחקר הומניסטי</p>
+<p><strong>מה נלמד:</strong> עקרונות מודלי שפה גדולים, הנדסת פרומפטים, שימוש ב-API של OpenAI, ואתיקה של AI.</p>
+<p><strong>כלים:</strong> <code>openai</code>, <code>transformers</code>, <code>langchain</code></p>
+<div class="force-ltr">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://colab.research.google.com/github/shaigordin/introdh/blob/2026/notebooks/2026wiki/05_AI_%D7%9C%D7%9E%D7%93%D7%A2%D7%99_%D7%94%D7%A8%D7%95%D7%97.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid figure-img"></a></p>
+<figcaption>Open In Colab</figcaption>
+</figure>
+</div>
+</div>
+<hr>
+</section>
+<section id="nb6" class="level2">
+<h2 class="anchored" data-anchor-id="nb6">מחברת 6 — ויזואליזציה ומפות</h2>
+<p>🗺️ <strong>נושא:</strong> ויזואליזציה של נתונים ומיפוי גיאוגרפי</p>
+<p><strong>מה נלמד:</strong> יצירת גרפים, רשתות ומפות אינטראקטיביות מנתונים הומניסטיים.</p>
+<p><strong>כלים:</strong> <code>plotly</code>, <code>folium</code>, <code>geopandas</code>, <code>networkx</code></p>
+<div class="force-ltr">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://colab.research.google.com/github/shaigordin/introdh/blob/2026/notebooks/2026wiki/06_%D7%95%D7%99%D7%96%D7%95%D7%90%D7%9C%D7%99%D7%96%D7%A6%D7%99%D7%94_%D7%95%D7%9E%D7%A4%D7%95%D7%AA.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid figure-img"></a></p>
+<figcaption>Open In Colab</figcaption>
+</figure>
+</div>
+</div>
 
 
 </section>

@@ -1,0 +1,93 @@
+---
+title: "מחברות Python לתרגול"
+toc: true
+toc-title: "המחברות"
+---
+
+מחברות Python אינטראקטיביות המלוות את יחידות הקורס. ניתן לפתוח כל מחברת ישירות ב-Google Colab ללא כל התקנה מקומית — רק צריך חשבון Google.
+
+> **הנחיה:** לחצו על כפתור ה-Colab הכחול ▶ בכל מחברת כדי להריץ אותה בענן. הקד בנוי כך שרץ לפי שלבים — תרגלו, שנו, ובדקו.
+
+---
+
+## מחברת 1 — ויקיפדיה ורשתות ידע {#nb1}
+
+📚 **נושא:** ויקיפדיה כמקור נתונים ורשתות ידע דיגיטלי
+
+**מה נלמד:** כיצד ויקיפדיה משמשת מקור נתונים מובנה, מהו גרף הקישורים בין ערכים, וכיצד לאסוף נתונים אוטומטית.
+
+**כלים:** `wikipedia-api`, `networkx`, `pyvis`
+
+::: {.force-ltr}
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shaigordin/introdh/blob/2026/notebooks/2026wiki/01_%D7%95%D7%99%D7%A7%D7%99%D7%A4%D7%93%D7%99%D7%94_%D7%95%D7%A8%D7%A9%D7%AA%D7%95%D7%AA_%D7%99%D7%93%D7%A2.ipynb){target="_blank"}
+:::
+
+---
+
+## מחברת 2 — קריאה מרחוק {#nb2}
+
+📖 **נושא:** Distant Reading — ניתוח טקסטואלי חישובי
+
+**מה נלמד:** ניתוח תדירות מילים, יצירת ענן מילים, n-grams, וסנטימנט אנליזה על קורפוס עברי.
+
+**כלים:** `pandas`, `matplotlib`, `wordcloud`, `nltk`
+
+::: {.force-ltr}
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shaigordin/introdh/blob/2026/notebooks/2026wiki/02_%D7%A7%D7%A8%D7%99%D7%90%D7%94_%D7%9E%D7%A8%D7%97%D7%95%D7%A7.ipynb){target="_blank"}
+:::
+
+---
+
+## מחברת 3 — OCR לטקסטים עבריים {#nb3}
+
+📷 **נושא:** זיהוי תווים אופטי (OCR) לעברית
+
+**מה נלמד:** כיצד ממירים תמונה של טקסט לטקסט דיגיטלי, שימוש ב-Tesseract לעברית, והערכת איכות הפלט.
+
+**כלים:** `pytesseract`, `PIL` (Pillow), `pdf2image`
+
+::: {.force-ltr}
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shaigordin/introdh/blob/2026/notebooks/2026wiki/03_OCR_%D7%A2%D7%91%D7%A8%D7%99%D7%AA.ipynb){target="_blank"}
+:::
+
+---
+
+## מחברת 4 — NLP ומידול נושאים {#nb4}
+
+🔬 **נושא:** עיבוד שפה טבעית (NLP) ו-Topic Modeling
+
+**מה נלמד:** טוקניזציה, נרמול טקסט, זיהוי ישויות בעברית, ומידול נושאים עם LDA.
+
+**כלים:** `spacy` (Hebrew), `gensim`, `pyLDAvis`
+
+::: {.force-ltr}
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shaigordin/introdh/blob/2026/notebooks/2026wiki/04_NLP_%D7%95%D7%9E%D7%99%D7%93%D7%95%D7%9C_%D7%A0%D7%95%D7%A9%D7%90%D7%99%D7%9D.ipynb){target="_blank"}
+:::
+
+---
+
+## מחברת 5 — בינה מלאכותית למדעי הרוח {#nb5}
+
+🤖 **נושא:** AI ומודלי שפה גדולים (LLMs) במחקר הומניסטי
+
+**מה נלמד:** עקרונות מודלי שפה גדולים, הנדסת פרומפטים, שימוש ב-API של OpenAI, ואתיקה של AI.
+
+**כלים:** `openai`, `transformers`, `langchain`
+
+::: {.force-ltr}
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shaigordin/introdh/blob/2026/notebooks/2026wiki/05_AI_%D7%9C%D7%9E%D7%93%D7%A2%D7%99_%D7%94%D7%A8%D7%95%D7%97.ipynb){target="_blank"}
+:::
+
+---
+
+## מחברת 6 — ויזואליזציה ומפות {#nb6}
+
+🗺️ **נושא:** ויזואליזציה של נתונים ומיפוי גיאוגרפי
+
+**מה נלמד:** יצירת גרפים, רשתות ומפות אינטראקטיביות מנתונים הומניסטיים.
+
+**כלים:** `plotly`, `folium`, `geopandas`, `networkx`
+
+::: {.force-ltr}
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shaigordin/introdh/blob/2026/notebooks/2026wiki/06_%D7%95%D7%99%D7%96%D7%95%D7%90%D7%9C%D7%99%D7%96%D7%A6%D7%99%D7%94_%D7%95%D7%9E%D7%A4%D7%95%D7%AA.ipynb){target="_blank"}
+:::
