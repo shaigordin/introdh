@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>מדעי הרוח הדיגיטליים תשפ״ו – מבוא למדעי הרוח הדיגיטליים תשפ״ו / שי גורדין</title>
+<title>מחברות Python לתרגול – מבוא למדעי הרוח הדיגיטליים / שי גורדין</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -74,10 +74,10 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="מדעי הרוח הדיגיטליים תשפ״ו – מבוא למדעי הרוח הדיגיטליים תשפ״ו / שי גורדין">
+<meta property="og:title" content="מדעי הרוח הדיגיטליים תשפ״ו – מבוא למדעי הרוח הדיגיטליים / שי גורדין">
 <meta property="og:description" content="">
 <meta property="og:image" content="home_page.png">
-<meta property="og:site_name" content="מבוא למדעי הרוח הדיגיטליים תשפ״ו / שי גורדין">
+<meta property="og:site_name" content="מבוא למדעי הרוח הדיגיטליים / שי גורדין">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -91,7 +91,7 @@ ul.task-list li input[type="checkbox"] {
     <img src="./ariel_logo_navbar.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">מבוא למדעי הרוח הדיגיטליים תשפ״ו / שי גורדין</span>
+    <span class="navbar-title">מבוא למדעי הרוח הדיגיטליים / שי גורדין</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="חפש"></div>
@@ -100,10 +100,6 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">עמוד הבית</span></a>
-  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">תכנית הקורס</span></a>
@@ -168,11 +164,26 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">בעמוד זה</h2>
+    <h2 id="toc-title">המחברות</h2>
   <ul>
   <li><a href="#מטרות-הקורס" id="toc-מטרות-הקורס" class="nav-link active" data-scroll-target="#מטרות-הקורס">מטרות הקורס</a></li>
   <li><a href="#תוכן-הקורס" id="toc-תוכן-הקורס" class="nav-link" data-scroll-target="#תוכן-הקורס">תוכן הקורס</a></li>
   <li><a href="#notebooks" id="toc-notebooks" class="nav-link" data-scroll-target="#notebooks">מחברות Python לתרגול</a></li>
+  <li><a href="#what-is-colab" id="toc-what-is-colab" class="nav-link" data-scroll-target="#what-is-colab">מה זה Google Colab?</a>
+  <ul class="collapse">
+  <li><a href="#מה-מיוחד-ב-colab" id="toc-מה-מיוחד-ב-colab" class="nav-link" data-scroll-target="#מה-מיוחד-ב-colab">מה מיוחד ב-Colab</a></li>
+  <li><a href="#how-to-open" id="toc-how-to-open" class="nav-link" data-scroll-target="#how-to-open">איך פותחים מחברת</a></li>
+  <li><a href="#how-to-run" id="toc-how-to-run" class="nav-link" data-scroll-target="#how-to-run">איך מריצים קוד</a></li>
+  <li><a href="#saving" id="toc-saving" class="nav-link" data-scroll-target="#saving">שמירה והגשה</a></li>
+  <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq">שאלות נפוצות</a></li>
+  </ul></li>
+  <li><a href="#nb1" id="toc-nb1" class="nav-link" data-scroll-target="#nb1">מחברת 1 — ויקיפדיה ורשתות ידע</a></li>
+  <li><a href="#nb2" id="toc-nb2" class="nav-link" data-scroll-target="#nb2">מחברת 2 — קריאה מרחוק</a></li>
+  <li><a href="#nb3" id="toc-nb3" class="nav-link" data-scroll-target="#nb3">מחברת 3 — OCR ו-VLM לטקסטים עבריים</a></li>
+  <li><a href="#nb4" id="toc-nb4" class="nav-link" data-scroll-target="#nb4">מחברת 4 — NLP וזיהוי ישויות</a></li>
+  <li><a href="#nb5" id="toc-nb5" class="nav-link" data-scroll-target="#nb5">מחברת 5 — בינה מלאכותית למדעי הרוח</a></li>
+  <li><a href="#nb6" id="toc-nb6" class="nav-link" data-scroll-target="#nb6">מחברת 6 — ויזואליזציה ומפות</a></li>
+  <li><a href="#nb7" id="toc-nb7" class="nav-link" data-scroll-target="#nb7">מחברת 7 — ניתוח רשתות ידע</a></li>
   </ul>
 </nav>
     </div>
@@ -185,7 +196,7 @@ ul.task-list li input[type="checkbox"] {
   <div class="about-contents">
     <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">מדעי הרוח הדיגיטליים תשפ״ו</h1>
+<h1 class="title">מחברות Python לתרגול</h1>
 </div>
 <div class="quarto-title-meta">
   </div>
@@ -197,11 +208,11 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="תוכן-הקורס" class="level2">
 <h2 data-anchor-id="תוכן-הקורס">תוכן הקורס</h2>
-<p>מאז שהאב רוברטו בוסה החליט להשתמש בכוח המחשב שזה עתה נוצר ליצור <a href="https://www.corpusthomisticum.org/it/index.age" target="_blank" title="אינדקס תומיסטיקוס">אינדקס</a> של כתבי תומס אקווינס בשנות ה-40 של המאה הקודמת, התפתח רבות תחום המחקר שמכונה כיום מדעי הרוח הדיגיטליים. הקורס בנוי כפרו-סמינר המחולק לארבעה יחידות. הפרויקט המרכזי של הקורס הוא כתיבה ופרסום של <strong>ערך ויקיפדיה מחקרי בעברית</strong> — תהליך שמלמד כיצד להפוך ידע אקדמי לתוכן דיגיטלי נגיש. לאורך הקורס נחקור את הכלים והשיטות של מדעי הרוח הדיגיטליים: קריאה מרחוק, זיהוי ישויות (NER), דיגיטציה (OCR/VLM), מיפוי גיאוגרפי, ניתוח רשתות ובינה מלאכותית — ונפעיל כל כלי על חומרי המקור שלכם. בסיום הקורס יציגו התלמידים את ממצאיהם ויפרסמו את הערך בויקיפדיה.</p>
+<p>מאז שהאב רוברטו בוסה החליט להשתמש בכוח המחשב שזה עתה נוצר ליצור <a href="https://www.corpusthomisticum.org/it/index.age" target="_blank" title="אינדקס תומיסטיקוס">אינדקס</a> של כתבי תומס אקווינס בשנות ה-40 של המאה הקודמת, התפתח רבות תחום המחקר שמכונה כיום מדעי הרוח הדיגיטליים. הקורס בנוי כפרו-סמינר המחולק לארבעה יחידות. הפרויקט המרכזי של הקורס הוא כתיבה ופרסום של <strong>ערך ויקיפדיה מחקרי בעברית</strong> - תהליך שמלמד כיצד להפוך ידע אקדמי לתוכן דיגיטלי נגיש. לאורך הקורס נחקור את הכלים והשיטות של מדעי הרוח הדיגיטליים: קריאה רחוקה, זיהוי ישויות (NER), דיגיטציה (OCR/VLM), מיפוי גיאוגרפי, ניתוח רשתות ובינה מלאכותית - וניישם אותם על מקורות ראשוניים מגוונים. בסיום הקורס יציגו התלמידים את ממצאיהם ויפרסמו את הערך בויקיפדיה.</p>
 </section>
 <section id="notebooks" class="level2">
 <h2 data-anchor-id="notebooks">מחברות Python לתרגול</h2>
-<p>שש מחברות Python אינטראקטיביות מלוות את הקורס. בכל מחברת ניתן לרוץ קוד ישירות דרך Google Colab ללא התקנה מקומית.</p>
+<p>הקורס יתרגל עבודה <strong>ביצירת קוד</strong> בניגוד לכתיבת קוד. שש מחברות פייתון אינטראקטיביות מלוות את הקורס. בכל מחברת ניתן להריץ קוד ישירות דרך Google Colab ללא התקנה מקומית.</p>
 <div class="notebook-card">
 <p><span class="notebook-number">1</span> <strong><a href="./notebooks/index.html#nb1">ויקיפדיה ורשתות ידע</a></strong> — מבנה הידע הדיגיטלי, גרף הקישורים בין ערכים, ואוסף נתונים אוטומטי</p>
 </div>
@@ -209,19 +220,236 @@ ul.task-list li input[type="checkbox"] {
 <p><span class="notebook-number">2</span> <strong><a href="./notebooks/index.html#nb2">קריאה מרחוק</a></strong> — ניתוח תדירות מילים, Voyant Tools, ו-n-grams על קורפוס עברי</p>
 </div>
 <div class="notebook-card">
-<p><span class="notebook-number">3</span> <strong><a href="./notebooks/index.html#nb3">OCR לטקסטים עבריים</a></strong> — זיהוי תווים אופטי, Tesseract, והערכת איכות הפלט</p>
+<p><span class="notebook-number">3</span> <strong><a href="./notebooks/index.html#nb3">OCR ו-VLM לטקסטים עבריים</a></strong> — דיגיטציה עם Tesseract, השוואה למודלי ראייה (Gemini Vision), ועבודה עם JPress</p>
 </div>
 <div class="notebook-card">
-<p><span class="notebook-number">4</span> <strong><a href="./notebooks/index.html#nb4">NLP ומידול נושאים</a></strong> — עיבוד שפה טבעית, טוקניזציה, ו-Topic Modeling בעברית</p>
+<p><span class="notebook-number">4</span> <strong><a href="./notebooks/index.html#nb4">NLP וזיהוי ישויות</a></strong> — עיבוד שפה טבעית, זיהוי ישויות בשם (NER) בעברית, ו-Topic Modeling לעבודה עצמאית</p>
 </div>
 <div class="notebook-card">
-<p><span class="notebook-number">5</span> <strong><a href="./notebooks/index.html#nb5">בינה מלאכותית למדעי הרוח</a></strong> — מודלי שפה גדולים (LLMs), הנדסת פרומפטים, ואתיקה של AI</p>
+<p><span class="notebook-number">5</span> <strong><a href="./notebooks/index.html#nb5">בינה מלאכותית למדעי הרוח</a></strong> — הנדסת פרומפטים לצורכי מחקר, מודלי שפה גדולים (LLMs), ואתיקה של AI</p>
 </div>
 <div class="notebook-card">
-<p><span class="notebook-number">6</span> <strong><a href="./notebooks/index.html#nb6">ויזואליזציה ומפות</a></strong> — גרפים, רשתות, ומפות GIS עם Python ו-Flourish</p>
+<p><span class="notebook-number">6</span> <strong><a href="./notebooks/index.html#nb6">ויזואליזציה ומפות</a></strong> — גרפים, רשתות, ומפות GIS אינטראקטיביות עם Python ו-Folium</p>
+</div>
+<div class="notebook-card">
+<p><span class="notebook-number">7</span> <strong><a href="./notebooks/index.html#nb7">ניתוח רשתות ידע</a></strong> — חישוב מדדי רשת, קהילות וצמתים מרכזיים בגרף הויקיפדיה</p>
 </div>
 
 
+<p>מחברות Python אינטראקטיביות המלוות את יחידות הקורס. ניתן לפתוח כל מחברת ישירות ב-Google Colab ללא כל התקנה מקומית — רק צריך חשבון Google.</p>
+<hr>
+</section>
+<section id="what-is-colab" class="level2">
+<h2 data-anchor-id="what-is-colab">מה זה Google Colab?</h2>
+<p><strong>Google Colab</strong> (קולאב) היא סביבת עבודה חינמית של גוגל להרצת קוד Python, ישירות בדפדפן — ללא התקנה של שום דבר על המחשב שלכם.</p>
+<p>חשבו עליה כ-<strong>מסמך Google Docs, אך במקום טקסט — קוד שרץ באמת</strong>.</p>
+<section id="מה-מיוחד-ב-colab" class="level3">
+<h3 data-anchor-id="מה-מיוחד-ב-colab">מה מיוחד ב-Colab</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>מאפיין</th>
+<th>פרטים</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>חינמי</strong></td>
+<td>כולל GPU/TPU לחישובים כבדים</td>
+</tr>
+<tr class="even">
+<td><strong>ענן</strong></td>
+<td>כל העיבוד מתבצע בשרתי גוגל, לא על המחשב שלכם</td>
+</tr>
+<tr class="odd">
+<td><strong>שיתוף</strong></td>
+<td>שיתוף פעולה בזמן אמת כמו Google Docs</td>
+</tr>
+<tr class="even">
+<td><strong>שמירה</strong></td>
+<td>שמירה אוטומטית ב-Google Drive</td>
+</tr>
+<tr class="odd">
+<td><strong>אין התקנה</strong></td>
+<td>עובד מכל מחשב עם Chrome / Firefox</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="how-to-open" class="level3">
+<h3 data-anchor-id="how-to-open">איך פותחים מחברת</h3>
+<ol type="1">
+<li>לחצו על הכפתור הכחול <strong>“Open in Colab”</strong> ליד כל מחברת בדף זה:</li>
+</ol>
+<div class="force-ltr">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://colab.research.google.com/" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid figure-img"></a></p>
+<figcaption>Open In Colab</figcaption>
+</figure>
+</div>
+</div>
+<ol start="2" type="1">
+<li>התחברו עם חשבון Google שלכם (אם נדרש)</li>
+<li><strong>חשוב מאוד:</strong> בחרו <code>File → Save a copy in Drive</code> כדי לשמור עותק אישי — אחרת השינויים <strong>לא יישמרו</strong>!</li>
+</ol>
+</section>
+<section id="how-to-run" class="level3">
+<h3 data-anchor-id="how-to-run">איך מריצים קוד</h3>
+<p>המחברת מחולקת ל<strong>תאים (Cells)</strong> — כל תא מכיל קוד או הסבר טקסטואלי.</p>
+<p>להרצת תא:</p>
+<ul>
+<li>לחצו על לחצן <strong>▶</strong> בצד שמאל של התא, <strong>או</strong></li>
+<li>לחצו <strong>Shift + Enter</strong> — מריץ תא ועובר לבא אחריו</li>
+<li>לחצו <strong>Ctrl + Enter</strong> — מריץ תא ונשאר בו</li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+הריצו לפי הסדר!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>חשוב להריץ את התאים <strong>מלמעלה למטה</strong> לפי הסדר. דילוג על תא עלול לגרום לשגיאות בתאים הבאים.</p>
+</div>
+</div>
+</section>
+<section id="saving" class="level3">
+<h3 data-anchor-id="saving">שמירה והגשה</h3>
+<p>בסיום השיעור:</p>
+<ol type="1">
+<li><code>File → Save a copy in Drive</code> — ודאו שהמחברת שמורה</li>
+<li><code>File → Download → Download .ipynb</code> — הורידו את הקובץ לשליחה ב-Moodle</li>
+</ol>
+</section>
+<section id="faq" class="level3">
+<h3 data-anchor-id="faq">שאלות נפוצות</h3>
+<p><strong>שאלה: הכל נעלם ו-Colab מבקש ממני להריץ מחדש.</strong><br>
+תשובה: Colab מתנתק לאחר ~90 דקות של אי-פעילות. יש להריץ מחדש מהתחלה — זה תקין.</p>
+<p><strong>שאלה: קיבלתי הודעת שגיאה אדומה — מה עושים?</strong><br>
+תשובה: קראו את ההודעה (בדרך כלל מסבירה מה קרה), ואז שאלו את Gemini ב-<a href="https://aistudio.google.com/">Google AI Studio</a> — העתיקו את השגיאה ושאלו ״מה זאת אומרת ואיך לתקן?״</p>
+<p><strong>שאלה: למה אין כפתור ▶ בחלק מהתאים?</strong><br>
+תשובה: תאים אפורים/לבנים הם תאי <strong>טקסט/הסבר</strong> — אי אפשר להריץ אותם, זה מכוון.</p>
+<p><strong>שאלה: איפה מקבלים מפתח Gemini API (חינמי)?</strong><br>
+תשובה: נכנסים ל-<a href="https://aistudio.google.com/apikey">aistudio.google.com/apikey</a>, לוחצים “Create API Key”, ומעתיקים את המחרוזת שמתקבלת.</p>
+<hr>
+<blockquote class="blockquote">
+<p><strong>הנחיה:</strong> לחצו על כפתור ה-Colab הכחול ▶ בכל מחברת כדי להריץ אותה בענן. הקוד בנוי כך שרץ לפי שלבים — תרגלו, שנו, ובדקו.</p>
+</blockquote>
+<hr>
+</section>
+</section>
+<section id="nb1" class="level2">
+<h2 data-anchor-id="nb1">מחברת 1 — ויקיפדיה ורשתות ידע</h2>
+<p>📚 <strong>נושא:</strong> ויקיפדיה כמקור נתונים ורשתות ידע דיגיטלי</p>
+<p><strong>מה נלמד:</strong> כיצד ויקיפדיה משמשת מקור נתונים מובנה, מהו גרף הקישורים בין ערכים, וכיצד לאסוף נתונים אוטומטית.</p>
+<p><strong>כלים:</strong> <code>wikipedia-api</code>, <code>networkx</code>, <code>pyvis</code></p>
+<div class="force-ltr">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://colab.research.google.com/github/shaigordin/introdh/blob/2026/notebooks/2026wiki/01_%D7%95%D7%99%D7%A7%D7%99%D7%A4%D7%93%D7%99%D7%94_%D7%95%D7%A8%D7%A9%D7%AA%D7%95%D7%AA_%D7%99%D7%93%D7%A2.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid figure-img"></a></p>
+<figcaption>Open In Colab</figcaption>
+</figure>
+</div>
+</div>
+<hr>
+</section>
+<section id="nb2" class="level2">
+<h2 data-anchor-id="nb2">מחברת 2 — קריאה מרחוק</h2>
+<p>📖 <strong>נושא:</strong> Distant Reading — ניתוח טקסטואלי חישובי</p>
+<p><strong>מה נלמד:</strong> ניתוח תדירות מילים, יצירת ענן מילים, n-grams, וסנטימנט אנליזה על קורפוס עברי.</p>
+<p><strong>כלים:</strong> <code>pandas</code>, <code>matplotlib</code>, <code>wordcloud</code>, <code>nltk</code></p>
+<div class="force-ltr">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://colab.research.google.com/github/shaigordin/introdh/blob/2026/notebooks/2026wiki/02_%D7%A7%D7%A8%D7%99%D7%90%D7%94_%D7%9E%D7%A8%D7%97%D7%95%D7%A7.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid figure-img"></a></p>
+<figcaption>Open In Colab</figcaption>
+</figure>
+</div>
+</div>
+<hr>
+</section>
+<section id="nb3" class="level2">
+<h2 data-anchor-id="nb3">מחברת 3 — OCR ו-VLM לטקסטים עבריים</h2>
+<p>📷 <strong>נושא:</strong> דיגיטציה — מזיהוי תווים אופטי למודלי ראייה</p>
+<p><strong>מה נלמד:</strong> כיצד ממירים תמונה של טקסט לטקסט דיגיטלי, שימוש ב-Tesseract לעברית, והשוואה שלב-אחר-שלב מול מודלי ראייה (VLM) כגון Gemini Vision. עבודה עם ארכיון JPress לעיתונות עברית היסטורית.</p>
+<p><strong>כלים:</strong> <code>pytesseract</code>, <code>PIL</code> (Pillow), <code>google-generativeai</code> (Gemini Vision)</p>
+<div class="force-ltr">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://colab.research.google.com/github/shaigordin/introdh/blob/2026/notebooks/2026wiki/03_OCR_%D7%A2%D7%91%D7%A8%D7%99%D7%AA.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid figure-img"></a></p>
+<figcaption>Open In Colab</figcaption>
+</figure>
+</div>
+</div>
+<hr>
+</section>
+<section id="nb4" class="level2">
+<h2 data-anchor-id="nb4">מחברת 4 — NLP וזיהוי ישויות</h2>
+<p>🔬 <strong>נושא:</strong> עיבוד שפה טבעית (NLP) וזיהוי ישויות בשם (NER)</p>
+<p><strong>מה נלמד:</strong> טוקניזציה, נרמול טקסט, וזיהוי ישויות בשם (אנשים, מקומות, ארגונים) בעברית — <strong>בשיעור</strong>. מידול נושאים עם LDA — <strong>לעבודה עצמאית בבית</strong>.</p>
+<p><strong>כלים:</strong> <code>spacy</code> (Hebrew), <code>gensim</code>, <code>pyLDAvis</code></p>
+<div class="force-ltr">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://colab.research.google.com/github/shaigordin/introdh/blob/2026/notebooks/2026wiki/04_NLP_%D7%95%D7%9E%D7%99%D7%93%D7%95%D7%9C_%D7%A0%D7%95%D7%A9%D7%90%D7%99%D7%9D.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid figure-img"></a></p>
+<figcaption>Open In Colab</figcaption>
+</figure>
+</div>
+</div>
+<hr>
+</section>
+<section id="nb5" class="level2">
+<h2 data-anchor-id="nb5">מחברת 5 — בינה מלאכותית למדעי הרוח</h2>
+<p>🤖 <strong>נושא:</strong> הנדסת פרומפטים ו-LLMs לצורכי מחקר הומניסטי</p>
+<p><strong>מה נלמד:</strong> כיצד לנסח פרומפטים לצורכי מחקר (חיפוש מקורות, סיכום, ניתוח טקסט), עקרונות מודלי שפה גדולים, שימוש ב-Gemini API (חינמי!) ואתיקה של AI במחקר אקדמי.</p>
+<p><strong>כלים:</strong> <code>google-generativeai</code> (Gemini — חינמי), <code>openai</code>, <code>anthropic</code></p>
+<div class="force-ltr">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://colab.research.google.com/github/shaigordin/introdh/blob/2026/notebooks/2026wiki/05_AI_%D7%9C%D7%9E%D7%93%D7%A2%D7%99_%D7%94%D7%A8%D7%95%D7%97.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid figure-img"></a></p>
+<figcaption>Open In Colab</figcaption>
+</figure>
+</div>
+</div>
+<hr>
+</section>
+<section id="nb6" class="level2">
+<h2 data-anchor-id="nb6">מחברת 6 — ויזואליזציה ומפות</h2>
+<p>🗺️ <strong>נושא:</strong> ויזואליזציה של נתונים ומיפוי גיאוגרפי</p>
+<p><strong>מה נלמד:</strong> יצירת גרפים, רשתות ומפות אינטראקטיביות מנתונים הומניסטיים.</p>
+<p><strong>כלים:</strong> <code>plotly</code>, <code>folium</code>, <code>geopandas</code>, <code>networkx</code></p>
+<div class="force-ltr">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://colab.research.google.com/github/shaigordin/introdh/blob/2026/notebooks/2026wiki/06_%D7%95%D7%99%D7%96%D7%95%D7%90%D7%9C%D7%99%D7%96%D7%A6%D7%99%D7%94_%D7%95%D7%9E%D7%A4%D7%95%D7%AA.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid figure-img"></a></p>
+<figcaption>Open In Colab</figcaption>
+</figure>
+</div>
+</div>
+<hr>
+</section>
+<section id="nb7" class="level2">
+<h2 data-anchor-id="nb7">מחברת 7 — ניתוח רשתות ידע</h2>
+<p>🕸️ <strong>נושא:</strong> ניתוח כמותי של רשתות ידע בויקיפדיה</p>
+<p><strong>מה נלמד:</strong> חישוב מדדי רשת (מרכזיות, צפיפות, קוטר), זיהוי קהילות וצמתים מרכזיים, והשוואת רשתות ידע בנושאי מחקר שונים.</p>
+<p><strong>כלים:</strong> <code>networkx</code>, <code>pyvis</code>, <code>community</code> (Louvain)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+בקרוב
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>מחברת 7 תפורסם לקראת שיעור 9 (28/05).</p>
+</div>
+</div>
 </section>
 </main> 
   </div>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>מחברות Python לתרגול – מבוא למדעי הרוח הדיגיטליים תשפ״ו / שי גורדין</title>
+<title>מחברות Python לתרגול – מבוא למדעי הרוח הדיגיטליים / שי גורדין</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -75,9 +75,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="מחברות Python לתרגול – מבוא למדעי הרוח הדיגיטליים תשפ״ו / שי גורדין">
+<meta property="og:title" content="מחברות Python לתרגול – מבוא למדעי הרוח הדיגיטליים / שי גורדין">
 <meta property="og:description" content="">
-<meta property="og:site_name" content="מבוא למדעי הרוח הדיגיטליים תשפ״ו / שי גורדין">
+<meta property="og:site_name" content="מבוא למדעי הרוח הדיגיטליים / שי גורדין">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -91,7 +91,7 @@ ul.task-list li input[type="checkbox"] {
     <img src="../ariel_logo_navbar.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">מבוא למדעי הרוח הדיגיטליים תשפ״ו / שי גורדין</span>
+    <span class="navbar-title">מבוא למדעי הרוח הדיגיטליים / שי גורדין</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="חפש"></div>
@@ -100,10 +100,6 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">עמוד הבית</span></a>
-  </li>  
   <li class="nav-item">
     <a class="nav-link" href="../about.html"> 
 <span class="menu-text">תכנית הקורס</span></a>
@@ -181,10 +177,11 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#nb1" id="toc-nb1" class="nav-link" data-scroll-target="#nb1">מחברת 1 — ויקיפדיה ורשתות ידע</a></li>
   <li><a href="#nb2" id="toc-nb2" class="nav-link" data-scroll-target="#nb2">מחברת 2 — קריאה מרחוק</a></li>
-  <li><a href="#nb3" id="toc-nb3" class="nav-link" data-scroll-target="#nb3">מחברת 3 — OCR לטקסטים עבריים</a></li>
-  <li><a href="#nb4" id="toc-nb4" class="nav-link" data-scroll-target="#nb4">מחברת 4 — NLP ומידול נושאים</a></li>
+  <li><a href="#nb3" id="toc-nb3" class="nav-link" data-scroll-target="#nb3">מחברת 3 — OCR ו-VLM לטקסטים עבריים</a></li>
+  <li><a href="#nb4" id="toc-nb4" class="nav-link" data-scroll-target="#nb4">מחברת 4 — NLP וזיהוי ישויות</a></li>
   <li><a href="#nb5" id="toc-nb5" class="nav-link" data-scroll-target="#nb5">מחברת 5 — בינה מלאכותית למדעי הרוח</a></li>
   <li><a href="#nb6" id="toc-nb6" class="nav-link" data-scroll-target="#nb6">מחברת 6 — ויזואליזציה ומפות</a></li>
+  <li><a href="#nb7" id="toc-nb7" class="nav-link" data-scroll-target="#nb7">מחברת 7 — ניתוח רשתות ידע</a></li>
   </ul>
 </nav>
     </div>
@@ -346,10 +343,10 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 </section>
 <section id="nb3" class="level2">
-<h2 class="anchored" data-anchor-id="nb3">מחברת 3 — OCR לטקסטים עבריים</h2>
-<p>📷 <strong>נושא:</strong> זיהוי תווים אופטי (OCR) לעברית</p>
-<p><strong>מה נלמד:</strong> כיצד ממירים תמונה של טקסט לטקסט דיגיטלי, שימוש ב-Tesseract לעברית, והערכת איכות הפלט.</p>
-<p><strong>כלים:</strong> <code>pytesseract</code>, <code>PIL</code> (Pillow), <code>pdf2image</code></p>
+<h2 class="anchored" data-anchor-id="nb3">מחברת 3 — OCR ו-VLM לטקסטים עבריים</h2>
+<p>📷 <strong>נושא:</strong> דיגיטציה — מזיהוי תווים אופטי למודלי ראייה</p>
+<p><strong>מה נלמד:</strong> כיצד ממירים תמונה של טקסט לטקסט דיגיטלי, שימוש ב-Tesseract לעברית, והשוואה שלב-אחר-שלב מול מודלי ראייה (VLM) כגון Gemini Vision. עבודה עם ארכיון JPress לעיתונות עברית היסטורית.</p>
+<p><strong>כלים:</strong> <code>pytesseract</code>, <code>PIL</code> (Pillow), <code>google-generativeai</code> (Gemini Vision)</p>
 <div class="force-ltr">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -361,9 +358,9 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 </section>
 <section id="nb4" class="level2">
-<h2 class="anchored" data-anchor-id="nb4">מחברת 4 — NLP ומידול נושאים</h2>
-<p>🔬 <strong>נושא:</strong> עיבוד שפה טבעית (NLP) ו-Topic Modeling</p>
-<p><strong>מה נלמד:</strong> טוקניזציה, נרמול טקסט, זיהוי ישויות בעברית, ומידול נושאים עם LDA.</p>
+<h2 class="anchored" data-anchor-id="nb4">מחברת 4 — NLP וזיהוי ישויות</h2>
+<p>🔬 <strong>נושא:</strong> עיבוד שפה טבעית (NLP) וזיהוי ישויות בשם (NER)</p>
+<p><strong>מה נלמד:</strong> טוקניזציה, נרמול טקסט, וזיהוי ישויות בשם (אנשים, מקומות, ארגונים) בעברית — <strong>בשיעור</strong>. מידול נושאים עם LDA — <strong>לעבודה עצמאית בבית</strong>.</p>
 <p><strong>כלים:</strong> <code>spacy</code> (Hebrew), <code>gensim</code>, <code>pyLDAvis</code></p>
 <div class="force-ltr">
 <div class="quarto-figure quarto-figure-center">
@@ -377,8 +374,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="nb5" class="level2">
 <h2 class="anchored" data-anchor-id="nb5">מחברת 5 — בינה מלאכותית למדעי הרוח</h2>
-<p>🤖 <strong>נושא:</strong> AI ומודלי שפה גדולים (LLMs) במחקר הומניסטי</p>
-<p><strong>מה נלמד:</strong> עקרונות מודלי שפה גדולים, הנדסת פרומפטים, שימוש ב-Gemini API (חינמי!) ואתיקה של AI.</p>
+<p>🤖 <strong>נושא:</strong> הנדסת פרומפטים ו-LLMs לצורכי מחקר הומניסטי</p>
+<p><strong>מה נלמד:</strong> כיצד לנסח פרומפטים לצורכי מחקר (חיפוש מקורות, סיכום, ניתוח טקסט), עקרונות מודלי שפה גדולים, שימוש ב-Gemini API (חינמי!) ואתיקה של AI במחקר אקדמי.</p>
 <p><strong>כלים:</strong> <code>google-generativeai</code> (Gemini — חינמי), <code>openai</code>, <code>anthropic</code></p>
 <div class="force-ltr">
 <div class="quarto-figure quarto-figure-center">
@@ -401,6 +398,26 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="https://colab.research.google.com/github/shaigordin/introdh/blob/2026/notebooks/2026wiki/06_%D7%95%D7%99%D7%96%D7%95%D7%90%D7%9C%D7%99%D7%96%D7%A6%D7%99%D7%94_%D7%95%D7%9E%D7%A4%D7%95%D7%AA.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid figure-img"></a></p>
 <figcaption>Open In Colab</figcaption>
 </figure>
+</div>
+</div>
+<hr>
+</section>
+<section id="nb7" class="level2">
+<h2 class="anchored" data-anchor-id="nb7">מחברת 7 — ניתוח רשתות ידע</h2>
+<p>🕸️ <strong>נושא:</strong> ניתוח כמותי של רשתות ידע בויקיפדיה</p>
+<p><strong>מה נלמד:</strong> חישוב מדדי רשת (מרכזיות, צפיפות, קוטר), זיהוי קהילות וצמתים מרכזיים, והשוואת רשתות ידע בנושאי מחקר שונים.</p>
+<p><strong>כלים:</strong> <code>networkx</code>, <code>pyvis</code>, <code>community</code> (Louvain)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+בקרוב
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>מחברת 7 תפורסם לקראת שיעור 9 (28/05).</p>
 </div>
 </div>
 
