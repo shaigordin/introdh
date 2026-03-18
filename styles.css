@@ -158,6 +158,12 @@ tbody tr:hover {
 .schedule-table {
   font-size: 0.9em;
 }
+/* Override Bootstrap's LTR default for table cells */
+.schedule-table th,
+.schedule-table td {
+  text-align: right !important;
+  direction: rtl;
+}
 .schedule-table .unit-header td {
   background-color: #d6eaf8;
   font-weight: 700;

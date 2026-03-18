@@ -8,16 +8,14 @@ project:
     - "notebooks/index.qmd"
 
 website:
-  title: "מבוא למדעי הרוח הדיגיטליים תשפ״ו / שי גורדין"
+  title: "מבוא למדעי הרוח הדיגיטליים / שי גורדין"
   open-graph: true
   reader-mode: true
   navbar:
     logo: ariel_logo_navbar.png
     background: primary
     right:
-      - text: "עמוד הבית"
-        href: index.qmd
-      - text: "תכנית הקורס"  
+      - text: "תכנית הקורס"
         href: about.qmd
       - text: "מחברות Python"
         href: notebooks/index.qmd
@@ -25,7 +23,7 @@ website:
         menu:
           - text: "מרכיבי הציון"
             href: assignments/index.qmd
-          - text: "אבן דרך 1 — בחירת נושא וקריאה מרחוק"
+          - text: "אבן דרך 1 — בחירת נושא וקריאה רחוקה"
             href: assignments/milestone1.qmd
           - text: "אבן דרך 2 — טיוטת ערך ויקיפדיה"
             href: assignments/milestone2.qmd
