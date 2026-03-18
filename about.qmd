@@ -48,6 +48,12 @@ for (i in seq_len(nrow(units))) {
     mutate(
       # Wrap date in LTR span
       date = sprintf('<span dir="ltr">%s</span>', date),
+      # Link topic to slides URL (opens in new tab) when present
+      topic = ifelse(
+        !is.na(slides_url) & slides_url != "",
+        sprintf('%s <a href="%s" target="_blank" title="שקפי השיעור">🖥️</a>', topic, slides_url),
+        topic
+      ),
       # Extract notebook number from filename (e.g. "05_AI..." -> 5)
       notebook_num = as.integer(str_extract(notebook, "^\\d+")),
       # Format notebook as badge link if present
