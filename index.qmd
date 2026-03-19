@@ -19,30 +19,30 @@ about:
 הקורס יתרגל עבודה **ביצירת קוד** בניגוד לכתיבת קוד. שש מחברות פייתון אינטראקטיביות מלוות את הקורס. בכל מחברת ניתן להריץ קוד ישירות דרך Google Colab ללא התקנה מקומית.
 
 ::: {.notebook-card}
-<span class="notebook-number">1</span> **[ויקיפדיה ורשתות ידע](notebooks/index.qmd#nb1)** — מבנה הידע הדיגיטלי, גרף הקישורים בין ערכים, ואוסף נתונים אוטומטי
+<span class="notebook-number">1</span> **[ויקיפדיה ורשתות ידע](notebooks/index.qmd#nb1){target="_blank"}** — מבנה הידע הדיגיטלי, גרף הקישורים בין ערכים, ואוסף נתונים אוטומטי
 :::
 
 ::: {.notebook-card}
-<span class="notebook-number">2</span> **[קריאה מרחוק](notebooks/index.qmd#nb2)** — ניתוח תדירות מילים, Voyant Tools, ו-n-grams על קורפוס עברי
+<span class="notebook-number">2</span> **[קריאה מרחוק](notebooks/index.qmd#nb2){target="_blank"}** — ניתוח תדירות מילים, Voyant Tools, ו-n-grams על קורפוס עברי
 :::
 
 ::: {.notebook-card}
-<span class="notebook-number">3</span> **[OCR ו-VLM לטקסטים עבריים](notebooks/index.qmd#nb3)** — דיגיטציה עם Tesseract, השוואה למודלי ראייה (Gemini Vision), ועבודה עם JPress
+<span class="notebook-number">3</span> **[OCR ו-VLM לטקסטים עבריים](notebooks/index.qmd#nb3){target="_blank"}** — דיגיטציה עם Tesseract, השוואה למודלי ראייה (Gemini Vision), ועבודה עם JPress
 :::
 
 ::: {.notebook-card}
-<span class="notebook-number">4</span> **[NLP וזיהוי ישויות](notebooks/index.qmd#nb4)** — עיבוד שפה טבעית, זיהוי ישויות בשם (NER) בעברית, ו-Topic Modeling לעבודה עצמאית
+<span class="notebook-number">4</span> **[NLP וזיהוי ישויות](notebooks/index.qmd#nb4){target="_blank"}** — עיבוד שפה טבעית, זיהוי ישויות בשם (NER) בעברית, ו-Topic Modeling לעבודה עצמאית
 :::
 
 ::: {.notebook-card}
-<span class="notebook-number">5</span> **[בינה מלאכותית למדעי הרוח](notebooks/index.qmd#nb5)** — הנדסת פרומפטים לצורכי מחקר, מודלי שפה גדולים (LLMs), ואתיקה של AI
+<span class="notebook-number">5</span> **[בינה מלאכותית למדעי הרוח](notebooks/index.qmd#nb5){target="_blank"}** — הנדסת פרומפטים לצורכי מחקר, מודלי שפה גדולים (LLMs), ואתיקה של AI
 :::
 
 ::: {.notebook-card}
-<span class="notebook-number">6</span> **[ויזואליזציה ומפות](notebooks/index.qmd#nb6)** — גרפים, רשתות, ומפות GIS אינטראקטיביות עם Python ו-Folium
+<span class="notebook-number">6</span> **[ויזואליזציה ומפות](notebooks/index.qmd#nb6){target="_blank"}** — גרפים, רשתות, ומפות GIS אינטראקטיביות עם Python ו-Folium
 :::
 
 ::: {.notebook-card}
-<span class="notebook-number">7</span> **[ניתוח רשתות ידע](notebooks/index.qmd#nb7)** — חישוב מדדי רשת, קהילות וצמתים מרכזיים בגרף הויקיפדיה
+<span class="notebook-number">7</span> **[ניתוח רשתות ידע](notebooks/index.qmd#nb7){target="_blank"}** — חישוב מדדי רשת, קהילות וצמתים מרכזיים בגרף הויקיפדיה
 :::
 
