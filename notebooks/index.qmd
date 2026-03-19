@@ -89,6 +89,8 @@ toc-title: "המחברות"
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shaigordin/introdh/blob/2026/notebooks/2026wiki/01_%D7%95%D7%99%D7%A7%D7%99%D7%A4%D7%93%D7%99%D7%94_%D7%95%D7%A8%D7%A9%D7%AA%D7%95%D7%AA_%D7%99%D7%93%D7%A2.ipynb){target="_blank"}
 :::
 
+🕸️ **[רשת הידע האינטראקטיבית — צפייה ישירה](2026wiki/03_knowledge_network.html){target="_blank"}**
+
 ---
 
 ## מחברת 2 — קריאה מרחוק {#nb2}

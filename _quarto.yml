@@ -6,6 +6,9 @@ project:
     - "assignments/*.qmd"
     - "resources/*.qmd"
     - "notebooks/index.qmd"
+  resources:
+    - notebooks/2026wiki/03_knowledge_network.html
+    - notebooks/2026wiki/lib/
 
 website:
   title: "מבוא למדעי הרוח הדיגיטליים / שי גורדין"
