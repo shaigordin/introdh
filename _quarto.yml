@@ -8,6 +8,14 @@ project:
     - "notebooks/index.qmd"
   resources:
     - notebooks/2026wiki/03_knowledge_network.html
+    - notebooks/2026wiki/02_lda_interactive.html
+    - notebooks/2026wiki/04_archaeology_map.html
+    - notebooks/2026wiki/05_heatmap.html
+    - notebooks/2026wiki/06_timeline.html
+    - notebooks/2026wiki/02_scatter_interactive.html
+    - notebooks/2026wiki/03_bar_interactive.html
+    - notebooks/2026wiki/01_ai_results.png
+    - notebooks/2026wiki/ai_analysis_results.csv
     - notebooks/2026wiki/lib/
 
 website:

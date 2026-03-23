@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_324795e689b9f994a69512474b044fc2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+<div style="position: fixed; top: 10px; left: 50%; transform: translateX(-50%);
+            background: white; padding: 8px 16px; border-radius: 8px;
+            border: 2px solid #2980b9; font-size: 16px; font-weight: bold; z-index: 1000;">
+    אתרים ארכיאולוגיים בישראל
+</div>
+    
+<div style="position: fixed; bottom: 30px; right: 10px;
+            background: white; padding: 10px; border-radius: 8px;
+            border: 2px solid gray; font-family: Arial; font-size: 13px; z-index: 1000;">
+    <b>מקרא – אזורים:</b><br>
+    צפון &nbsp; מרכז &nbsp; דרום<br>
+    <i>גודל עיגול = חשיבות</i>
+</div>
+    
+            <div class="folium-map" id="map_324795e689b9f994a69512474b044fc2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_324795e689b9f994a69512474b044fc2 = L.map(
+                "map_324795e689b9f994a69512474b044fc2",
+                {
+                    center: [31.5, 35.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_333a7fb212ddd54e39148fdfc40738c3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_333a7fb212ddd54e39148fdfc40738c3.addTo(map_324795e689b9f994a69512474b044fc2);
+        
+    
+            var circle_marker_21c8589f6eee31aac247b19430ecb97c = L.circleMarker(
+                [32.584, 35.183],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_324795e689b9f994a69512474b044fc2);
+        
+    
+        var popup_7c3a9f89868e11dba1117bfd6afbb6f0 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c9690784b4aeb6c353ed61d7e5868c59 = $(`<div id="html_c9690784b4aeb6c353ed61d7e5868c59" style="width: 100.0%; height: 100.0%;"><div dir="rtl" style="text-align:right; font-family:Arial;"><b>מגידו</b><br><b>תקופה:</b> ברונזה/ברזל<br><b>שכבות:</b> 26<br><b>חשיבות:</b> 10/10<br><b>אזור:</b> צפון</div></div>`)[0];
+                popup_7c3a9f89868e11dba1117bfd6afbb6f0.setContent(html_c9690784b4aeb6c353ed61d7e5868c59);
+            
+        
+
+        circle_marker_21c8589f6eee31aac247b19430ecb97c.bindPopup(popup_7c3a9f89868e11dba1117bfd6afbb6f0)
+        ;
+
+        
+    
+    
+            circle_marker_21c8589f6eee31aac247b19430ecb97c.bindTooltip(
+                `<div>
+                     מגידו
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9ecf4e52f57f3946da7001f29d3f2549 = L.circleMarker(
+                [33.017, 35.567],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 3}
+            ).addTo(map_324795e689b9f994a69512474b044fc2);
+        
+    
+        var popup_4970ab99f3bb56ea5f605213c54e69ff = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_afdd0273ab094548806a4b5668ada56a = $(`<div id="html_afdd0273ab094548806a4b5668ada56a" style="width: 100.0%; height: 100.0%;"><div dir="rtl" style="text-align:right; font-family:Arial;"><b>חצור</b><br><b>תקופה:</b> ברונזה/ברזל<br><b>שכבות:</b> 21<br><b>חשיבות:</b> 9/10<br><b>אזור:</b> צפון</div></div>`)[0];
+                popup_4970ab99f3bb56ea5f605213c54e69ff.setContent(html_afdd0273ab094548806a4b5668ada56a);
+            
+        
+
+        circle_marker_9ecf4e52f57f3946da7001f29d3f2549.bindPopup(popup_4970ab99f3bb56ea5f605213c54e69ff)
+        ;
+
+        
+    
+    
+            circle_marker_9ecf4e52f57f3946da7001f29d3f2549.bindTooltip(
+                `<div>
+                     חצור
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c2d36248f1ad11a68e5280dcab7cc2ed = L.circleMarker(
+                [31.561, 34.848],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 3}
+            ).addTo(map_324795e689b9f994a69512474b044fc2);
+        
+    
+        var popup_269dccfb02a303e6f90ea0b04faf0448 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_72db3c7e436f9323f8b73a57d60edf4d = $(`<div id="html_72db3c7e436f9323f8b73a57d60edf4d" style="width: 100.0%; height: 100.0%;"><div dir="rtl" style="text-align:right; font-family:Arial;"><b>לכיש</b><br><b>תקופה:</b> ברונזה/ברזל<br><b>שכבות:</b> 18<br><b>חשיבות:</b> 9/10<br><b>אזור:</b> דרום</div></div>`)[0];
+                popup_269dccfb02a303e6f90ea0b04faf0448.setContent(html_72db3c7e436f9323f8b73a57d60edf4d);
+            
+        
+
+        circle_marker_c2d36248f1ad11a68e5280dcab7cc2ed.bindPopup(popup_269dccfb02a303e6f90ea0b04faf0448)
+        ;
+
+        
+    
+    
+            circle_marker_c2d36248f1ad11a68e5280dcab7cc2ed.bindTooltip(
+                `<div>
+                     לכיש
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4ff3349994d3e6fdf66bdbf7310021f7 = L.circleMarker(
+                [31.769, 35.216],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_324795e689b9f994a69512474b044fc2);
+        
+    
+        var popup_df554717c07b15c9c3c9d9be8a338e4f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_2597a9872140b5f8bcf8fa3455a469e6 = $(`<div id="html_2597a9872140b5f8bcf8fa3455a469e6" style="width: 100.0%; height: 100.0%;"><div dir="rtl" style="text-align:right; font-family:Arial;"><b>ירושלים</b><br><b>תקופה:</b> ברונזה עד היום<br><b>שכבות:</b> 30<br><b>חשיבות:</b> 10/10<br><b>אזור:</b> מרכז</div></div>`)[0];
+                popup_df554717c07b15c9c3c9d9be8a338e4f.setContent(html_2597a9872140b5f8bcf8fa3455a469e6);
+            
+        
+
+        circle_marker_4ff3349994d3e6fdf66bdbf7310021f7.bindPopup(popup_df554717c07b15c9c3c9d9be8a338e4f)
+        ;
+
+        
+    
+    
+            circle_marker_4ff3349994d3e6fdf66bdbf7310021f7.bindTooltip(
+                `<div>
+                     ירושלים
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_28c7a5f2c88de1ad2afe9b5b1951cd87 = L.circleMarker(
+                [31.261, 35.118],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16, "stroke": true, "weight": 3}
+            ).addTo(map_324795e689b9f994a69512474b044fc2);
+        
+    
+        var popup_a4a2bc242a0f271eee176b22ab9e020a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c05329dc56308f1f82effed5e520eb8b = $(`<div id="html_c05329dc56308f1f82effed5e520eb8b" style="width: 100.0%; height: 100.0%;"><div dir="rtl" style="text-align:right; font-family:Arial;"><b>ערד</b><br><b>תקופה:</b> ברונזה/ברזל<br><b>שכבות:</b> 12<br><b>חשיבות:</b> 8/10<br><b>אזור:</b> דרום</div></div>`)[0];
+                popup_a4a2bc242a0f271eee176b22ab9e020a.setContent(html_c05329dc56308f1f82effed5e520eb8b);
+            
+        
+
+        circle_marker_28c7a5f2c88de1ad2afe9b5b1951cd87.bindPopup(popup_a4a2bc242a0f271eee176b22ab9e020a)
+        ;
+
+        
+    
+    
+            circle_marker_28c7a5f2c88de1ad2afe9b5b1951cd87.bindTooltip(
+                `<div>
+                     ערד
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bb81e7ac8cf8e8c4a930ea5fccbf9252 = L.circleMarker(
+                [32.498, 35.5],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16, "stroke": true, "weight": 3}
+            ).addTo(map_324795e689b9f994a69512474b044fc2);
+        
+    
+        var popup_9ffd8abd7f2217ad3273703a86bc8efb = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_538ee751f2ff1b19f9af10fb464e93b2 = $(`<div id="html_538ee751f2ff1b19f9af10fb464e93b2" style="width: 100.0%; height: 100.0%;"><div dir="rtl" style="text-align:right; font-family:Arial;"><b>בית שאן</b><br><b>תקופה:</b> ברונזה עד ביזנטי<br><b>שכבות:</b> 18<br><b>חשיבות:</b> 8/10<br><b>אזור:</b> צפון</div></div>`)[0];
+                popup_9ffd8abd7f2217ad3273703a86bc8efb.setContent(html_538ee751f2ff1b19f9af10fb464e93b2);
+            
+        
+
+        circle_marker_bb81e7ac8cf8e8c4a930ea5fccbf9252.bindPopup(popup_9ffd8abd7f2217ad3273703a86bc8efb)
+        ;
+
+        
+    
+    
+            circle_marker_bb81e7ac8cf8e8c4a930ea5fccbf9252.bindTooltip(
+                `<div>
+                     בית שאן
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1f1c7d6b12e94628533580771fe28559 = L.circleMarker(
+                [31.801, 34.748],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(map_324795e689b9f994a69512474b044fc2);
+        
+    
+        var popup_571dc0d0deda4631f9c135a99b03fad1 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_837af62ce3c54b9ea6ea7adb452fd04b = $(`<div id="html_837af62ce3c54b9ea6ea7adb452fd04b" style="width: 100.0%; height: 100.0%;"><div dir="rtl" style="text-align:right; font-family:Arial;"><b>מגרשות</b><br><b>תקופה:</b> ברונזה/ברזל<br><b>שכבות:</b> 8<br><b>חשיבות:</b> 7/10<br><b>אזור:</b> מרכז</div></div>`)[0];
+                popup_571dc0d0deda4631f9c135a99b03fad1.setContent(html_837af62ce3c54b9ea6ea7adb452fd04b);
+            
+        
+
+        circle_marker_1f1c7d6b12e94628533580771fe28559.bindPopup(popup_571dc0d0deda4631f9c135a99b03fad1)
+        ;
+
+        
+    
+    
+            circle_marker_1f1c7d6b12e94628533580771fe28559.bindTooltip(
+                `<div>
+                     מגרשות
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e86f217ae3f12694de46ab4683ef8cd7 = L.circleMarker(
+                [32.732, 35.061],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 3}
+            ).addTo(map_324795e689b9f994a69512474b044fc2);
+        
+    
+        var popup_c9a02bae5382166094657db51b401bc3 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_4a64b60d521a20729eb4de511ca519c3 = $(`<div id="html_4a64b60d521a20729eb4de511ca519c3" style="width: 100.0%; height: 100.0%;"><div dir="rtl" style="text-align:right; font-family:Arial;"><b>כרמל (מערות)</b><br><b>תקופה:</b> פרהיסטורי<br><b>שכבות:</b> 5<br><b>חשיבות:</b> 9/10<br><b>אזור:</b> צפון</div></div>`)[0];
+                popup_c9a02bae5382166094657db51b401bc3.setContent(html_4a64b60d521a20729eb4de511ca519c3);
+            
+        
+
+        circle_marker_e86f217ae3f12694de46ab4683ef8cd7.bindPopup(popup_c9a02bae5382166094657db51b401bc3)
+        ;
+
+        
+    
+    
+            circle_marker_e86f217ae3f12694de46ab4683ef8cd7.bindTooltip(
+                `<div>
+                     כרמל (מערות)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4e628fb035272ce25d9271f92bbdd2ff = L.circleMarker(
+                [31.5, 35.467],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 3}
+            ).addTo(map_324795e689b9f994a69512474b044fc2);
+        
+    
+        var popup_16fdb658fd287d3359c001a9c2d7d573 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_fe88e83a342efa4797798748dcc28bbe = $(`<div id="html_fe88e83a342efa4797798748dcc28bbe" style="width: 100.0%; height: 100.0%;"><div dir="rtl" style="text-align:right; font-family:Arial;"><b>ים המלח</b><br><b>תקופה:</b> ברונזה עד ביזנטי<br><b>שכבות:</b> 15<br><b>חשיבות:</b> 9/10<br><b>אזור:</b> מרכז</div></div>`)[0];
+                popup_16fdb658fd287d3359c001a9c2d7d573.setContent(html_fe88e83a342efa4797798748dcc28bbe);
+            
+        
+
+        circle_marker_4e628fb035272ce25d9271f92bbdd2ff.bindPopup(popup_16fdb658fd287d3359c001a9c2d7d573)
+        ;
+
+        
+    
+    
+            circle_marker_4e628fb035272ce25d9271f92bbdd2ff.bindTooltip(
+                `<div>
+                     ים המלח
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a0f98c36de4797fbb50807e302ff697e = L.circleMarker(
+                [29.776, 35.001],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16, "stroke": true, "weight": 3}
+            ).addTo(map_324795e689b9f994a69512474b044fc2);
+        
+    
+        var popup_8d8bd235c32faa51a8323fffc300f087 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_eef27db50717d7af361c23b379ef1824 = $(`<div id="html_eef27db50717d7af361c23b379ef1824" style="width: 100.0%; height: 100.0%;"><div dir="rtl" style="text-align:right; font-family:Arial;"><b>תמנע</b><br><b>תקופה:</b> ברונזה<br><b>שכבות:</b> 6<br><b>חשיבות:</b> 8/10<br><b>אזור:</b> דרום</div></div>`)[0];
+                popup_8d8bd235c32faa51a8323fffc300f087.setContent(html_eef27db50717d7af361c23b379ef1824);
+            
+        
+
+        circle_marker_a0f98c36de4797fbb50807e302ff697e.bindPopup(popup_8d8bd235c32faa51a8323fffc300f087)
+        ;
+
+        
+    
+    
+            circle_marker_a0f98c36de4797fbb50807e302ff697e.bindTooltip(
+                `<div>
+                     תמנע
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_900d54be4c401d782e99566cb2726598 = L.circleMarker(
+                [32.495, 34.889],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16, "stroke": true, "weight": 3}
+            ).addTo(map_324795e689b9f994a69512474b044fc2);
+        
+    
+        var popup_2e92e025278623d6efbe1c3a490a5792 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_8aaf37ca50ca754d5cc316b5434b57f0 = $(`<div id="html_8aaf37ca50ca754d5cc316b5434b57f0" style="width: 100.0%; height: 100.0%;"><div dir="rtl" style="text-align:right; font-family:Arial;"><b>קיסריה</b><br><b>תקופה:</b> הלניסטי-ביזנטי<br><b>שכבות:</b> 10<br><b>חשיבות:</b> 8/10<br><b>אזור:</b> מרכז</div></div>`)[0];
+                popup_2e92e025278623d6efbe1c3a490a5792.setContent(html_8aaf37ca50ca754d5cc316b5434b57f0);
+            
+        
+
+        circle_marker_900d54be4c401d782e99566cb2726598.bindPopup(popup_2e92e025278623d6efbe1c3a490a5792)
+        ;
+
+        
+    
+    
+            circle_marker_900d54be4c401d782e99566cb2726598.bindTooltip(
+                `<div>
+                     קיסריה
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6e2a8d7ef88d64314359d9698d22c394 = L.circleMarker(
+                [31.609, 34.894],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(map_324795e689b9f994a69512474b044fc2);
+        
+    
+        var popup_3eea3f1c756cca31f4749bdb0c21541e = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_ca5fdb7bafafe4cb16515ec376d2d71f = $(`<div id="html_ca5fdb7bafafe4cb16515ec376d2d71f" style="width: 100.0%; height: 100.0%;"><div dir="rtl" style="text-align:right; font-family:Arial;"><b>בית גוברין</b><br><b>תקופה:</b> ברונזה עד ביזנטי<br><b>שכבות:</b> 9<br><b>חשיבות:</b> 7/10<br><b>אזור:</b> דרום</div></div>`)[0];
+                popup_3eea3f1c756cca31f4749bdb0c21541e.setContent(html_ca5fdb7bafafe4cb16515ec376d2d71f);
+            
+        
+
+        circle_marker_6e2a8d7ef88d64314359d9698d22c394.bindPopup(popup_3eea3f1c756cca31f4749bdb0c21541e)
+        ;
+
+        
+    
+    
+            circle_marker_6e2a8d7ef88d64314359d9698d22c394.bindTooltip(
+                `<div>
+                     בית גוברין
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

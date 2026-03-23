@@ -133,6 +133,8 @@ toc-title: "המחברות"
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shaigordin/introdh/blob/2026/notebooks/2026wiki/04_NLP_%D7%95%D7%9E%D7%99%D7%93%D7%95%D7%9C_%D7%A0%D7%95%D7%A9%D7%90%D7%99%D7%9D.ipynb){target="_blank"}
 :::
 
+🔍 **[מפת נושאים אינטראקטיבית (LDA) — צפייה ישירה](2026wiki/02_lda_interactive.html){target="_blank"}**
+
 ---
 
 ## מחברת 5 — בינה מלאכותית למדעי הרוח {#nb5}
@@ -147,6 +149,8 @@ toc-title: "המחברות"
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shaigordin/introdh/blob/2026/notebooks/2026wiki/05_AI_%D7%9C%D7%9E%D7%93%D7%A2%D7%99_%D7%94%D7%A8%D7%95%D7%97.ipynb){target="_blank"}
 :::
 
+🤖 **[תוצאות ניתוח AI — סיווג טקסטים היסטוריים](2026wiki/01_ai_results.png){target="_blank"}**
+
 ---
 
 ## מחברת 6 — ויזואליזציה ומפות {#nb6}
@@ -160,6 +164,10 @@ toc-title: "המחברות"
 ::: {.force-ltr}
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shaigordin/introdh/blob/2026/notebooks/2026wiki/06_%D7%95%D7%99%D7%96%D7%95%D7%90%D7%9C%D7%99%D7%96%D7%A6%D7%99%D7%94_%D7%95%D7%9E%D7%A4%D7%95%D7%AA.ipynb){target="_blank"}
 :::
+
+🗺️ **[מפת אתרים ארכאולוגיים אינטראקטיבית — צפייה ישירה](2026wiki/04_archaeology_map.html){target="_blank"}**
+
+📅 **[ציר זמן היסטורי אינטראקטיבי — צפייה ישירה](2026wiki/06_timeline.html){target="_blank"}**
 
 ---
 
