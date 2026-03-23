@@ -1,7 +1,11 @@
 date,unit_number,unit_name,topic,slides_url,notebook,activity,reading,notes
 19/03/26,1,מבוא ופרויקט ויקיפדיה,מבוא: מחקר במדעי הרוח הדיגיטליים — גילוי תרבות באמצעות נתונים,https://docs.google.com/presentation/d/1sAoH_kA9JVZjetzJ6Nzvxys-7szywhQ6FgQZig7w4Bw/edit?usp=sharing,01_ויקיפדיה_ורשתות_ידע.ipynb,"📓 מחברת 1: ויקיפדיה ורשתות ידע<br>🔍 היכרות עם מבנה הנתונים הדיגיטלי","<a href='https://drive.google.com/file/d/1HkW56NQ7tw2hFMH4FHhvc7DI4azyIq66/view?usp=sharing'>Niederer & van Dijck 2010</a>",
 26/03/26,1,מבוא ופרויקט ויקיפדיה,עבודת מחקר בעידן הבינה המלאכותית — הקצאת נושאים לפרויקט,,05_AI_למדעי_הרוח.ipynb,"📓 מחברת 5: AI למדעי הרוח — הנדסת פרומפטים<br>📋 <a href='assignments/milestone1.html'>הגשת טופס בחירת נושא</a>","<a href='https://manovich.net/index.php/projects/cultural-analytics'>Manovich 2020, קטעים נבחרים</a>",
-09/04/26,1,מבוא ופרויקט ויקיפדיה,הרצאת אורח — עדי ארז (ויקימדיה ישראל): פרויקט ויקיפדיה באקדמיה,,,"👤 הרצאת אורח: עדי ארז (ויקימדיה ישראל)<br>💬 דיון: טיוטות ויקיפדיה ראשוניות",,אחרי פסח
+09/04/26,1,מבוא ופרויקט ויקיפדיה,הרצאת אורח — רביב נאוה (ויקימדיה ישראל): פרויקט ויקיפדיה באקדמיה,,,"💬 דיון: טיוטות ויקיפדיה ראשוניות","<a href='https://view.genially.com/67b323e7bf634f8584ee0bc3?authuser=0'>עקרונות לבחירת מקורות מידע</a><br>
+<a href='https://view.genially.com/67b356efb4115a5d6b10a1e9?authuser=0'>מבנה ערך בויקיפדיה</a><br>
+<a href='https://view.genially.com/67fb6fe4bc315a1e1ec601c8?authuser=0'>סגנון הכתיבה בויקיפדיה</a><br>
+<a href='https://view.genially.com/67b1d1e1b52847dc7b7e7c58?authuser=0'>השוואה בין כתיבה אינצקלופדית לאקדמית</a>
+",אחרי פסח
 16/04/26,2,שיטות מחקר חישובי,קריאה מרחוק (Distant Reading) — ניתוח תדירות מילים וטקסטים,,02_קריאה_מרחוק.ipynb,"📓 מחברת 2: קריאה מרחוק + Voyant Tools<br>🎯 <a href='assignments/milestone1.html'>אבן דרך 1 — להגשה עד 16/04</a>","<a href='https://drive.google.com/file/d/11I1_Lduv1d43Ti88_4X1fAqh8-luR4gz/view?usp=sharing'>רוקוול וסינקלייר 2016</a>",
 23/04/26,2,שיטות מחקר חישובי,ישויות וטקסט: זיהוי ישויות בשמות (NER),,04_NLP_ומידול_נושאים.ipynb,"📓 מחברת 4: NLP ו-NER<br>🔍 זיהוי ישויות בטקסטים עבריים","<a href='https://drive.google.com/file/d/16Qm_ud1NklhOuqmrZao7_lEoYfuxfViK/view?usp=sharing'>McGillivray and Tóth 2020, chs. 2-3</a>",
 30/04/26,2,שיטות מחקר חישובי,"דיגיטציה: OCR מול VLM — Tesseract, EasyOCR ו-Gemini Vision",,03_OCR_עברית.ipynb,"📓 מחברת 3: OCR ו-VLM לטקסטים עבריים<br>🗞️ עבודה עם JPress<br>⚖️ השוואת שיטות דיגיטציה",,
