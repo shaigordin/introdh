@@ -116,7 +116,7 @@ toc-title: "המחברות"
 **כלים:** `pytesseract`, `PIL` (Pillow), `google-generativeai` (Gemini Vision)
 
 ::: {.force-ltr}
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shaigordin/introdh/blob/2026/notebooks/2026wiki/03_OCR_%D7%A2%D7%91%D7%A8%D7%99%D7%AA.ipynb){target="_blank"}
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shaigordin/introdh/blob/2026/notebooks/2026wiki/ocr-basics-introdh26.ipynb){target="_blank"}
 :::
 
 ---
