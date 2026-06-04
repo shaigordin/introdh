@@ -6,6 +6,7 @@ project:
     - "assignments/*.qmd"
     - "resources/*.qmd"
     - "notebooks/index.qmd"
+    - "slides/ethics-2026.qmd"
   resources:
     - notebooks/2026wiki/03_knowledge_network.html
     - notebooks/2026wiki/02_lda_interactive.html
